@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48680a1ac011d2f43acdac73a653a5d1, type: 3}
+  m_Name: Character Pelmen
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 7100858703260330641, guid: 0532934f87758ce46954f08e74ffa329, type: 3}
+  MovingStaticData: {fileID: 11400000, guid: 7223faf452771c24b8a8cd05c538f4a9, type: 2}

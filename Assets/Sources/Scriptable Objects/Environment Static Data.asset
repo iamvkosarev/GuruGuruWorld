@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f55242b774412849bc87c7434ed9b2f, type: 3}
+  m_Name: Environment Static Data
+  m_EditorClassIdentifier: 
+  Tree: {fileID: 4134940222147544832, guid: 3f99aefe44cb3154990508a14a2bcc1d, type: 3}
+  TreeCount: 20
+  SpawnTreeRadius: 45

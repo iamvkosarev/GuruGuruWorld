@@ -1,0 +1,420 @@
+fileFormatVersion: 2
+guid: 83935e082f0173c479ec87cffd1d0023
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2947167315047256872
+    second: pelmen_faces7_0
+  - first:
+      213: 3797566039774432171
+    second: pelmen_faces7_1
+  - first:
+      213: -4122173218477165418
+    second: pelmen_faces7_2
+  - first:
+      213: -5831263107636501562
+    second: pelmen_faces7_3
+  - first:
+      213: -5531519331545463891
+    second: pelmen_faces7_4
+  - first:
+      213: 6447667869744367629
+    second: pelmen_faces7_5
+  - first:
+      213: 8372581647009413146
+    second: pelmen_faces7_6
+  - first:
+      213: 1130075476240362073
+    second: pelmen_faces7_7
+  - first:
+      213: -4255000521028527118
+    second: pelmen_faces7_8
+  - first:
+      213: 8547388303434181623
+    second: pelmen_faces7_9
+  - first:
+      213: 8963238444289827078
+    second: pelmen_faces7_10
+  - first:
+      213: -5554099390889633535
+    second: pelmen_faces7_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pelmen_faces7_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 62
+        width: 41
+        height: 30
+      alignment: 9
+      pivot: {x: 0.4436092, y: -0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc67f411fe8917d0800000000000000
+      internalID: -2947167315047256872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pelmen_faces7_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 62
+        width: 41
+        height: 30
+      alignment: 9
+      pivot: {x: 0.4436092, y: -0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab87db513aa3b430800000000000000
+      internalID: 3797566039774432171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pelmen_faces7_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 62
+        width: 41
+        height: 30
+      alignment: 9
+      pivot: {x: 0.4436092, y: -0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6943a0a4c491bc6c0800000000000000
+      internalID: -4122173218477165418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pelmen_faces7_3
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 62
+        width: 41
+        height: 30
+      alignment: 9
+      pivot: {x: 0.4436092, y: -0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c36c755911331fa0800000000000000
+      internalID: -5831263107636501562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pelmen_faces7_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 41
+        height: 30
+      alignment: 9
+      pivot: {x: 0.4436092, y: -0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3c607a9781c33b0800000000000000
+      internalID: -5531519331545463891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pelmen_faces7_5
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 32
+        width: 41
+        height: 30
+      alignment: 9
+      pivot: {x: 0.4436092, y: -0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0800dd24c7ba7950800000000000000
+      internalID: 6447667869744367629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pelmen_faces7_6
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 32
+        width: 41
+        height: 30
+      alignment: 9
+      pivot: {x: 0.4436092, y: -0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1873fae5a2613470800000000000000
+      internalID: 8372581647009413146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pelmen_faces7_7
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 32
+        width: 41
+        height: 30
+      alignment: 9
+      pivot: {x: 0.4436092, y: -0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95aefa288a5deaf00800000000000000
+      internalID: 1130075476240362073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pelmen_faces7_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 41
+        height: 30
+      alignment: 9
+      pivot: {x: 0.4436092, y: -0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb1ef0f19333f4c0800000000000000
+      internalID: -4255000521028527118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pelmen_faces7_9
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 2
+        width: 41
+        height: 30
+      alignment: 9
+      pivot: {x: 0.4436092, y: -0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbe58f306c6e9670800000000000000
+      internalID: 8547388303434181623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pelmen_faces7_10
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2
+        width: 41
+        height: 30
+      alignment: 9
+      pivot: {x: 0.4436092, y: -0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601250530e1d36c70800000000000000
+      internalID: 8963238444289827078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pelmen_faces7_11
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 2
+        width: 41
+        height: 30
+      alignment: 9
+      pivot: {x: 0.4436092, y: -0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1095fc6e700ebe2b0800000000000000
+      internalID: -5554099390889633535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

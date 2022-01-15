@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a220b810d4ddc6d40b49c13b20b1ae24, type: 3}
+  m_Name: __Game Static Data
+  m_EditorClassIdentifier: 
+  AudioStaticData: {fileID: 11400000, guid: 55d4e6ce5dc83d24799a66d5d749b1ef, type: 2}
+  VFXStaticData: {fileID: 11400000, guid: c27182fc04c39784d89651ffaf13f8d0, type: 2}
+  MovementStaticData: {fileID: 11400000, guid: 5dd7f6c5da54c1d498d76bf16cfd80d3, type: 2}
+  CharactersStaticData: {fileID: 11400000, guid: fc98d52168a5e7344a5600b968b90ebf, type: 2}
+  PelmenStaticData: {fileID: 11400000, guid: 0dfd0c8ebbdeb474bbffb5d613c0212b, type: 2}
+  EnvironmentStaticData: {fileID: 11400000, guid: 282cb0055d5d4294793051376c17d1dd, type: 2}
