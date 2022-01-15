@@ -270,8 +270,9 @@ MonoBehaviour:
   RotatingParts:
   - {fileID: 2907975569075489693}
   - {fileID: 7223205750100958909}
-  Face: {fileID: 3278495203308895284}
-  Hat: {fileID: 5001927834218385049}
+  FaceSpriteRenderer: {fileID: 3278495203308895284}
+  BodySpriteRenderer: {fileID: 1599556196651588524}
+  HatSpriteRenderer: {fileID: 5001927834218385049}
 --- !u!61 &3974896720206667220
 BoxCollider2D:
   m_ObjectHideFlags: 0

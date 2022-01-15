@@ -17,7 +17,6 @@ namespace Client {
 
             var newEntity = world.NewEntity();
             ref var moverCom = ref newEntity.Get<MovingComponent>();
-            ref var pelmenCom = ref newEntity.Get<PelmenComponent>();
             ref var playerCom = ref newEntity.Get<PlayerComponent>();
 
             sceneData.CinemachineVirtualCamera.Follow = characterView.transform;
@@ -30,7 +29,12 @@ namespace Client {
             var pelmenView = characterView.GetComponent<PelmenView>();
             moverCom.RotatingParts = characterView.RotatingParts;
 
-            pelmenCom.Face = pelmenView.Face;
+            world.AddPelmenCom(newEntity, pelmenView, true, PelmenHatType.Cowboy,false);
+            world.AddEaterCom(newEntity, moverCom.Body, moverCom.RotatingParts[0]);
+
+
+            ref var eaterCom = ref newEntity.Get<EaterComponent>();
+            eaterCom.iceCreamTime = UnityEngine.Random.Range(0f, 3f);
         }
     }
 }

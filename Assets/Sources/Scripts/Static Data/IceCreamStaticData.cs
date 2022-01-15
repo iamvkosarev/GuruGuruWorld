@@ -6,7 +6,9 @@ using UnityEngine;
 public class IceCreamStaticData : ScriptableObject
 {
     public GameObject IceCreamPrefab;
+    public AnimationCurve SwitchingCurve;
     public float FallingSpeed;
+    public float SwitchingTime = 1f;
     public float LifeTime;
-    public int PoolCount;
+    public int PoolSize;
 }

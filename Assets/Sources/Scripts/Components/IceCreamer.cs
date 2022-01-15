@@ -1,8 +1,10 @@
 using UnityEngine;
 
 namespace Client {
-    struct IceCreamerComponent
+    struct EaterComponent
     {
-        // add your data here.
+        public Transform EaterTransform;
+        public Transform RotatingPart;
+        public float iceCreamTime;
     }
 }

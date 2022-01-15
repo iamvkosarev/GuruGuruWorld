@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PelmenView : CharacterView
 {
-    public SpriteRenderer Face;
-    public SpriteRenderer Hat;
+    public SpriteRenderer FaceSpriteRenderer;
+    public SpriteRenderer BodySpriteRenderer;
+    public SpriteRenderer HatSpriteRenderer;
 }

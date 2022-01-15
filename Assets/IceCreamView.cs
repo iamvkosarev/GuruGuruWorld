@@ -5,4 +5,5 @@ using UnityEngine;
 public class IceCreamView : MonoBehaviour
 {
     public Animator Animator;
+    public SpriteRenderer SpriteRenderer;
 }

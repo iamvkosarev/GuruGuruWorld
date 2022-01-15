@@ -3,7 +3,7 @@ using UnityEngine;
 namespace Client {
     struct PelmenComponent {
         public SpriteRenderer Face;
-        public PelmenFaceType CurrentFaceType;
-        public PelmenFaceType PreviouseType;
+        public PelmenFaceType FaceType;
+        public int ID;
     }
 }

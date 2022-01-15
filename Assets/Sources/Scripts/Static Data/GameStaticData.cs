@@ -11,4 +11,5 @@ public class GameStaticData : ScriptableObject
     public CharactersStaticData CharactersStaticData;
     public PelmenStaticData PelmenStaticData;
     public EnvironmentStaticData EnvironmentStaticData;
+    public IceCreamStaticData IceCreamStaticData;
 }

@@ -141,9 +141,9 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 26
-        height: 27
-      alignment: 7
+        width: 37
+        height: 45
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -160,11 +160,11 @@ TextureImporter:
       name: ice_cream_1
       rect:
         serializedVersion: 2
-        x: 26
+        x: 37
         y: 0
-        width: 26
-        height: 27
-      alignment: 7
+        width: 37
+        height: 45
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -181,11 +181,11 @@ TextureImporter:
       name: ice_cream_2
       rect:
         serializedVersion: 2
-        x: 52
+        x: 74
         y: 0
-        width: 26
-        height: 27
-      alignment: 7
+        width: 37
+        height: 45
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -202,11 +202,11 @@ TextureImporter:
       name: ice_cream_3
       rect:
         serializedVersion: 2
-        x: 78
+        x: 111
         y: 0
-        width: 26
-        height: 27
-      alignment: 7
+        width: 37
+        height: 45
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -223,11 +223,11 @@ TextureImporter:
       name: ice_cream_4
       rect:
         serializedVersion: 2
-        x: 104
+        x: 148
         y: 0
-        width: 26
-        height: 27
-      alignment: 7
+        width: 37
+        height: 45
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -236,48 +236,6 @@ TextureImporter:
       bones: []
       spriteID: bf7f68fa49d85c560800000000000000
       internalID: 7333423237982255099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_cream_5
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 0
-        width: 26
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d40172c86d9070210800000000000000
-      internalID: 1299017834598699085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_cream_6
-      rect:
-        serializedVersion: 2
-        x: 156
-        y: 0
-        width: 26
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a5eb487215758f60800000000000000
-      internalID: 8035957832300619168
       vertices: []
       indices: 
       edges: []

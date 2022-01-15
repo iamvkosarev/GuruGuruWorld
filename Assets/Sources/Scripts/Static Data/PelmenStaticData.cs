@@ -20,7 +20,8 @@ public enum PelmenHatType
     Devil,
     Papadur,
     Rock,
-    Arrow
+    Arrow,
+    Random
 }
 [Serializable]
 public class PelmenFaceData
@@ -41,4 +42,5 @@ public class PelmenStaticData : ScriptableObject
 {
     public PelmenFaceData[] PelmenFaces;
     public PelmenHatData[] PelmenHats;
+    public Color[] colors;
 }

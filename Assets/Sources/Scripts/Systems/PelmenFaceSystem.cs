@@ -8,6 +8,7 @@ namespace Client {
         readonly EcsWorld world = null;
         readonly GameStaticData staticData = null;
         readonly EcsFilter<PelmenComponent, MovingComponent> pelmenFilter = null;
+        readonly EcsFilter<PelmenComponent,TargetedFaceComponent> targetedFaceFilter = null;
 
         private Dictionary<PelmenFaceType, PelmenFaceData> pelmenFaceDictionary = new Dictionary<PelmenFaceType, PelmenFaceData>();
         void IEcsInitSystem.Init()
@@ -20,8 +21,43 @@ namespace Client {
             {
                 ref var pelmenCom = ref pelmenFilter.Get1(i);
 
-                ChangeType(ref pelmenCom, PelmenFaceType.Base);
+                pelmenCom.FaceType = PelmenFaceType.Base;
             }
+            if(pelmenFilter.GetEntitiesCount() > 1)
+            {
+
+                foreach (var i in pelmenFilter)
+                {
+                    ref var moverCom = ref pelmenFilter.Get2(i);
+                    world.AddTargetedFace(pelmenFilter.GetEntity(i), moverCom.Body, GetRandomPelmen(i), GetRandomFace(), 20f, moverCom.RotatingParts[0]);
+                }
+            }
+        }
+
+        private PelmenFaceType GetRandomFace()
+        {
+            int index = UnityEngine.Random.Range(1, pelmenFaceDictionary.Count);
+            int count = 0;
+            foreach (var item in pelmenFaceDictionary)
+            {
+                if(count == index)
+                {
+                    return item.Key;
+                }
+                count++;
+            }
+            return PelmenFaceType.Base;
+        }
+
+        private Transform GetRandomPelmen(int except)
+        {
+            int index = UnityEngine.Random.Range(0, pelmenFilter.GetEntitiesCount());
+            if(index == except)
+            {
+                index += 1;
+                index %= pelmenFilter.GetEntitiesCount();
+            }
+            return pelmenFilter.Get2(index).Body;
         }
 
         void IEcsRunSystem.Run () {
@@ -32,22 +68,34 @@ namespace Client {
 
                 if(moverCom.Direction.y > 0f)
                 {
-                    ChangeType(ref pelmenCom, PelmenFaceType.Ass);
+                    pelmenCom.Face.sprite = pelmenFaceDictionary[PelmenFaceType.Ass].Sprite;
                 }
                 else
                 {
+                    if(pelmenCom.Face.sprite != pelmenFaceDictionary[pelmenCom.FaceType].Sprite)
+                    {
+                        pelmenCom.Face.sprite = pelmenFaceDictionary[pelmenCom.FaceType].Sprite;
+                    }
+                }
+            }
+            foreach (var i in targetedFaceFilter)
+            {
 
-                    ChangeType(ref pelmenCom, PelmenFaceType.Base);
+                ref var pelmenCom = ref targetedFaceFilter.Get1(i);
+                ref var targetedFaceCom = ref targetedFaceFilter.Get2(i);
+                if(Vector3.Distance(targetedFaceCom.Object.position, targetedFaceCom.Target.position) <= targetedFaceCom.WorkingDistance && 
+                    (targetedFaceCom.RotatingPart.localScale.x == -1 && targetedFaceCom.Object.position.x - targetedFaceCom.Target.position.x >= 0f ||
+                    targetedFaceCom.RotatingPart.localScale.x == 1 && targetedFaceCom.Object.position.x - targetedFaceCom.Target.position.x <= 0f))
+                {
+                    pelmenCom.FaceType = targetedFaceCom.ReactionType;
+                }
+                else
+                {
+                    pelmenCom.FaceType = PelmenFaceType.Base;
+
                 }
             }
         }
 
-        private void ChangeType(ref PelmenComponent pelmenCom, PelmenFaceType newFaceType)
-        {
-            if(pelmenCom.CurrentFaceType == newFaceType) { return; }
-            pelmenCom.PreviouseType = pelmenCom.CurrentFaceType;
-            pelmenCom.CurrentFaceType = newFaceType;
-            pelmenCom.Face.sprite = pelmenFaceDictionary[newFaceType].Sprite;
-        }
     }
 }
