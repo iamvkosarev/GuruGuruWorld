@@ -5,5 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "MyProject/Game/CharactersStaticData")]
 public class CharactersStaticData : ScriptableObject
 {
-    public CharacterStaticData Player;
+    public CharacterStaticData Pelmen;
+    public CharacterStaticData Butterfly;
 }

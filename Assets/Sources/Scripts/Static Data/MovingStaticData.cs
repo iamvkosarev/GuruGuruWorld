@@ -8,6 +8,7 @@ public class MovingStaticData : ScriptableObject
 {
     public bool IsJumping = false;
     public float Speed = 0f;
+    public Vector2 TargetPosLength;
     public float JumpHight = 0f;
     public float JumpTime = 0f;
     public float JumpPauseTime = 0f;

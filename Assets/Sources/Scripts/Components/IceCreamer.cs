@@ -5,6 +5,6 @@ namespace Client {
     {
         public Transform EaterTransform;
         public Transform RotatingPart;
-        public float iceCreamTime;
+        public float IceCreamTime;
     }
 }

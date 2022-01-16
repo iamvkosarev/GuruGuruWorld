@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d7a0bf3433b534449334050fbfd866d, type: 3}
-  m_Name: Characters Static Data
+  m_Script: {fileID: 11500000, guid: 48680a1ac011d2f43acdac73a653a5d1, type: 3}
+  m_Name: Character Butterfly
   m_EditorClassIdentifier: 
-  Pelmen: {fileID: 11400000, guid: 0b9a0a180d27d1143a865a432cff2140, type: 2}
-  Butterfly: {fileID: 11400000, guid: 30e3308d384dca1448c86419fd2f255d, type: 2}
+  Prefab: {fileID: 8169760251888694298, guid: 35facda450495b04ab9624f5721b5f3b, type: 3}
+  MovingStaticData: {fileID: 11400000, guid: 306a103c6bb033d46a40d49d1a6f4437, type: 2}

@@ -3,25 +3,25 @@ using System;
 using UnityEngine;
 
 namespace Client {
-    sealed class SpawnNPCSystem : IEcsInitSystem {
+    sealed class SpawnButterflySystem : IEcsInitSystem {
+        // auto-injected fields.
         readonly EcsWorld world = null;
         readonly GameStaticData staticData = null;
 
-        private Transform npcParent;
-        public void Init()
+        private Transform butterflyParent;
+        void IEcsInitSystem.Init()
         {
-            npcParent = new GameObject("NPC").transform;
+            butterflyParent = new GameObject("Butterfly").transform;
             for (int i = 0; i < 30; i++)
             {
-                SpawnNPCPelmen();
+                SpawnNPCButterfly();
             }
         }
 
-        private void SpawnNPCPelmen()
+        private void SpawnNPCButterfly()
         {
-            var characterStaticData = staticData.CharactersStaticData.Pelmen;
-            var characterView = characterStaticData.Prefab.Instantiate(npcParent);
-            var pelmenView = characterView.GetComponent<PelmenView>();
+            var characterStaticData = staticData.CharactersStaticData.Butterfly;
+            var characterView = characterStaticData.Prefab.Instantiate(butterflyParent);
 
             var newEntity = world.NewEntity();
             ref var moverCom = ref newEntity.Get<MovingComponent>();
@@ -36,20 +36,30 @@ namespace Client {
             moverCom.RotatingParts = characterView.RotatingParts;
 
 
-            world.AddPelmenCom(newEntity, pelmenView, true, PelmenHatType.Random, true);
-            world.AddEaterCom(newEntity, moverCom.Body, moverCom.RotatingParts[0]);
-
-
-            ref var eaterCom = ref newEntity.Get<EaterComponent>();
-            eaterCom.IceCreamTime = UnityEngine.Random.Range(4f, 8f);
-
-
+            SetColor(ref characterView);
             characterView.transform.position = 20f * new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
             float targetPosLength = UnityEngine.Random.Range(moverCom.MovingStaticData.TargetPosLength.x, moverCom.MovingStaticData.TargetPosLength.y);
             Vector2 circlePos = UnityEngine.Random.insideUnitCircle * targetPosLength;
             npcCom.TargetPos = moverCom.Transform.position + new Vector3(circlePos.x, circlePos.y);
         }
 
-        
+        private void SetColor(ref CharacterView characterView)
+        {
+            float randomValue = UnityEngine.Random.Range(0f, 1f);
+            if(randomValue <= 0.33f)
+            {
+                characterView.Animator.SetTrigger("Red");
+            }
+            else if(randomValue >= 0.66f)
+            {
+
+                characterView.Animator.SetTrigger("Blue");
+            }
+            else
+            {
+                characterView.Animator.SetTrigger("Yellow");
+
+            }
+        }
     }
 }

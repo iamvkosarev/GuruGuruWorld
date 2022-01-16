@@ -30,6 +30,7 @@ namespace Client {
                 {
                     ref var moverCom = ref pelmenFilter.Get2(i);
                     world.AddTargetedFace(pelmenFilter.GetEntity(i), moverCom.Body, GetRandomPelmen(i), GetRandomFace(), 20f, moverCom.RotatingParts[0]);
+                    world.AddTargetedFace(pelmenFilter.GetEntity(i), moverCom.Body, GetRandomPelmen(i), GetRandomFace(), 20f, moverCom.RotatingParts[0]);
                 }
             }
         }

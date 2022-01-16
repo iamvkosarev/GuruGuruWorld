@@ -7,11 +7,16 @@ public enum PelmenFaceType
 {
     Base,
     CatSmile,
-    Cool,
     Loover,
     Ass,
     RockFace,
-    FullToothSmile
+    FullToothSmile,
+    Talking_1,
+    Ñondemning_1,
+    SadSimple,
+    Talking_2,
+    Disappointed,
+    Condemning_2
 }
 public enum PelmenHatType
 {

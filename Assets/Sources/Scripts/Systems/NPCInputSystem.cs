@@ -20,7 +20,8 @@ namespace Client {
                 if(directionVector.magnitude < 1.4f)
                 {
                     moverCom.JumpPauseSpandedTime = UnityEngine.Random.Range(0f,1f);
-                    Vector2 circlePos = UnityEngine.Random.insideUnitCircle * 15f;
+                    float targetPosLength = UnityEngine.Random.Range(moverCom.MovingStaticData.TargetPosLength.x, moverCom.MovingStaticData.TargetPosLength.y);
+                    Vector2 circlePos = UnityEngine.Random.insideUnitCircle * targetPosLength;
                     npcCom.TargetPos = moverCom.Transform.position + new Vector3(circlePos.x, circlePos.y   );
 
                 }

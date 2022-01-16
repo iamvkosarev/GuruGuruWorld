@@ -93,6 +93,7 @@ namespace Client {
                 .Add(new SpawnEnvironmentSystem())
                 .Add(new SpawnPlayerSystem())
                 .Add(new SpawnNPCSystem())
+                .Add(new SpawnButterflySystem())
                 .Add(new IceCreamSystem())
                 .Add(new NPCInputSystem())
                 .Add(new PlayerInputSystem())

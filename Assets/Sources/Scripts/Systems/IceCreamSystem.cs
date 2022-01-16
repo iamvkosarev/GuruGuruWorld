@@ -26,9 +26,9 @@ namespace Client {
             foreach (var i in eaterFilter)
             {
                 ref var eaterCom = ref eaterFilter.Get1(i);
-                if(eaterCom.iceCreamTime > 0f)
+                if(eaterCom.IceCreamTime > 0f)
                 {
-                    eaterCom.iceCreamTime -= Time.deltaTime;
+                    eaterCom.IceCreamTime -= Time.deltaTime;
 
                 }
                 else
@@ -40,7 +40,7 @@ namespace Client {
                         {
                             world.SpawnIceCream(eaterCom.EaterTransform.position, selectedIceView, eaterCom.RotatingPart.localScale, eaterCom.EaterTransform.localPosition.y);
                             selectedIceView.Animator.SetTrigger("Fall");
-                            eaterCom.iceCreamTime = UnityEngine.Random.Range(2f, 4f);
+                            eaterCom.IceCreamTime = UnityEngine.Random.Range(4f, 8f);
                         }
                     }
                 }

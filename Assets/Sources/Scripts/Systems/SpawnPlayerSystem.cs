@@ -12,7 +12,7 @@ namespace Client {
 
         public void Init () {
 
-            var characterStaticData = staticData.CharactersStaticData.Player;
+            var characterStaticData = staticData.CharactersStaticData.Pelmen;
             var characterView = characterStaticData.Prefab.Instantiate(null);
 
             var newEntity = world.NewEntity();
@@ -25,6 +25,7 @@ namespace Client {
             moverCom.Body = characterView.Body;
             moverCom.IncreasingSpeedValue = 1f;
             moverCom.MovingStaticData = characterStaticData.MovingStaticData;
+            moverCom.RotatingParts = characterView.RotatingParts;
 
             var pelmenView = characterView.GetComponent<PelmenView>();
             moverCom.RotatingParts = characterView.RotatingParts;
@@ -34,7 +35,7 @@ namespace Client {
 
 
             ref var eaterCom = ref newEntity.Get<EaterComponent>();
-            eaterCom.iceCreamTime = UnityEngine.Random.Range(0f, 3f);
+            eaterCom.IceCreamTime = UnityEngine.Random.Range(4f, 8f);
         }
     }
 }

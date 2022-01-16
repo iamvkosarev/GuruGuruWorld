@@ -44,9 +44,7 @@ public static class GameEcsExtensions
     public static void AddPelmenCom(this EcsWorld world, EcsEntity entity, PelmenView pelmenView, bool chooseHat = false, PelmenHatType pelmenHatType = PelmenHatType.Random, bool setColor = false)
     {
         ref var pelmenCom = ref entity.Get<PelmenComponent>();
-        ref var moverCom = ref entity.Get<MovingComponent>();
         GameEcsStartup.SelectHat(ref pelmenView, chooseHat, pelmenHatType);
-        moverCom.RotatingParts = pelmenView.RotatingParts;
         if (setColor)
         {
             Color skinColor = GameEcsStartup.GetPelmenRandomSkinColor();

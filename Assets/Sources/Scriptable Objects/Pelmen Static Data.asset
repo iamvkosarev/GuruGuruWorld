@@ -16,15 +16,27 @@ MonoBehaviour:
   - Sprite: {fileID: -2947167315047256872, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 0
   - Sprite: {fileID: 3797566039774432171, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
-    PelmenFaceType: 4
+    PelmenFaceType: 3
   - Sprite: {fileID: -4122173218477165418, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
-    PelmenFaceType: 5
+    PelmenFaceType: 4
   - Sprite: {fileID: -5831263107636501562, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
-    PelmenFaceType: 6
+    PelmenFaceType: 5
+  - Sprite: {fileID: -5531519331545463891, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    PelmenFaceType: 11
   - Sprite: {fileID: 6447667869744367629, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 1
+  - Sprite: {fileID: 8372581647009413146, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    PelmenFaceType: 9
+  - Sprite: {fileID: 1130075476240362073, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    PelmenFaceType: 7
+  - Sprite: {fileID: -4255000521028527118, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    PelmenFaceType: 8
   - Sprite: {fileID: 8547388303434181623, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
-    PelmenFaceType: 3
+    PelmenFaceType: 2
+  - Sprite: {fileID: 8963238444289827078, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    PelmenFaceType: 6
+  - Sprite: {fileID: -5554099390889633535, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    PelmenFaceType: 10
   PelmenHats:
   - Sprite: {fileID: 0}
     PelmenHatType: 0
