@@ -12,6 +12,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f55242b774412849bc87c7434ed9b2f, type: 3}
   m_Name: Environment Static Data
   m_EditorClassIdentifier: 
-  Tree: {fileID: 4134940222147544832, guid: 3f99aefe44cb3154990508a14a2bcc1d, type: 3}
-  TreeCount: 20
-  SpawnTreeRadius: 45
+  EnvironmentDatas:
+  - Prefab: {fileID: 4134940222147544832, guid: 3f99aefe44cb3154990508a14a2bcc1d, type: 3}
+    GressSprites:
+    - {fileID: 21300000, guid: 40b40e04c5146e6469799a6ed78c362d, type: 3}
+    SpawnCount: 20
+    SpawnRadius: 35
+  - Prefab: {fileID: 9216338701649631330, guid: 884ceeb66e2cc5b44bff1b822ae44a39, type: 3}
+    GressSprites:
+    - {fileID: -4761368103044643773, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -9112099288549801003, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: 1225047164989690652, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -7254104753832417625, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -6895656148124528732, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: 5327007670123538461, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: 6312686370498127844, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: 714449725043378039, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: 1555150878173212449, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -5211142123586284092, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: 3460105110247113324, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: 4322487864113044980, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: 2959086777665035242, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -6368184331308962983, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -3810872746773608672, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: 2263463541838401252, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -3063112852045648235, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: 5650644892573473777, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: 5148208992859579800, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -6541576956838712430, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: 2566346674676378149, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -7622652381379352426, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -2566847879778617142, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -6394677932560240531, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: 6632480149733244673, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -4468708060316803754, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -6477515697971696502, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -6143969555739562983, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: 4171919339037438401, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    - {fileID: -2780544847295320179, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
+    SpawnCount: 700
+    SpawnRadius: 35

@@ -19,3 +19,4 @@ MonoBehaviour:
   PelmenStaticData: {fileID: 11400000, guid: 0dfd0c8ebbdeb474bbffb5d613c0212b, type: 2}
   EnvironmentStaticData: {fileID: 11400000, guid: 282cb0055d5d4294793051376c17d1dd, type: 2}
   IceCreamStaticData: {fileID: 11400000, guid: b6bbbfd4c988df74795ca3afcecb290e, type: 2}
+  GressStaticData: {fileID: 11400000, guid: d8705f7cc0fa896479322793f6b9c4c9, type: 2}

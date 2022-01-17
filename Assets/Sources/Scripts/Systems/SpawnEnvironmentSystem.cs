@@ -10,11 +10,16 @@ namespace Client {
         private Transform parent;
         public void Init () {
             parent = new GameObject("Environment").transform;
-            for (int i = 0; i < staticData.EnvironmentStaticData.TreeCount; i++)
+            for (int i = 0; i < staticData.EnvironmentStaticData.EnvironmentDatas.Length; i++)
             {
-                var tree = staticData.EnvironmentStaticData.Tree.Instantiate(parent);
-                Vector2 circlePos = UnityEngine.Random.insideUnitCircle * staticData.EnvironmentStaticData.SpawnTreeRadius;
-                tree.transform.position = new Vector3(circlePos.x, circlePos.y);
+                var environmentData = staticData.EnvironmentStaticData.EnvironmentDatas[i];
+                for (int j = 0; j < environmentData.SpawnCount; j++)
+                {
+                    var @object = environmentData.Prefab.Instantiate(parent);
+                    @object.GetComponent<SpriteRenderer>().sprite = environmentData.GressSprites[UnityEngine.Random.Range(0, environmentData.GressSprites.Length)];
+                    Vector2 circlePos = UnityEngine.Random.insideUnitCircle * environmentData.SpawnRadius;
+                    @object.transform.position = new Vector3(circlePos.x, circlePos.y);
+                }
             }
         }
     }

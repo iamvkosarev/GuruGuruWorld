@@ -1,0 +1,852 @@
+fileFormatVersion: 2
+guid: c04a204a648e3414aa9543b60cc6f9a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4761368103044643773
+    second: gress_0
+  - first:
+      213: -9112099288549801003
+    second: gress_1
+  - first:
+      213: 1225047164989690652
+    second: gress_2
+  - first:
+      213: -7254104753832417625
+    second: gress_3
+  - first:
+      213: -6895656148124528732
+    second: gress_4
+  - first:
+      213: 5327007670123538461
+    second: gress_5
+  - first:
+      213: 6312686370498127844
+    second: gress_6
+  - first:
+      213: 714449725043378039
+    second: gress_7
+  - first:
+      213: 1555150878173212449
+    second: gress_8
+  - first:
+      213: -5211142123586284092
+    second: gress_9
+  - first:
+      213: 3460105110247113324
+    second: gress_10
+  - first:
+      213: 4322487864113044980
+    second: gress_11
+  - first:
+      213: 2959086777665035242
+    second: gress_12
+  - first:
+      213: -6368184331308962983
+    second: gress_13
+  - first:
+      213: -3810872746773608672
+    second: gress_14
+  - first:
+      213: 2263463541838401252
+    second: gress_15
+  - first:
+      213: -3063112852045648235
+    second: gress_16
+  - first:
+      213: 5650644892573473777
+    second: gress_17
+  - first:
+      213: 5148208992859579800
+    second: gress_18
+  - first:
+      213: -6541576956838712430
+    second: gress_19
+  - first:
+      213: 2566346674676378149
+    second: gress_20
+  - first:
+      213: -7622652381379352426
+    second: gress_21
+  - first:
+      213: -2566847879778617142
+    second: gress_22
+  - first:
+      213: -6394677932560240531
+    second: gress_23
+  - first:
+      213: 6632480149733244673
+    second: gress_24
+  - first:
+      213: -4468708060316803754
+    second: gress_25
+  - first:
+      213: -6477515697971696502
+    second: gress_26
+  - first:
+      213: -6143969555739562983
+    second: gress_27
+  - first:
+      213: 4171919339037438401
+    second: gress_28
+  - first:
+      213: -2780544847295320179
+    second: gress_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.4887796, y: 0.10575583}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gress_0
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 195
+        width: 23
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3440625efe83cedb0800000000000000
+      internalID: -4761368103044643773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_1
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 193
+        width: 17
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d346eb99f15b8180800000000000000
+      internalID: -9112099288549801003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_2
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 193
+        width: 17
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c135f4ee7ed300110800000000000000
+      internalID: 1225047164989690652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 141
+        width: 9
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6a858092e345b90800000000000000
+      internalID: -7254104753832417625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 168
+        width: 25
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af8ccd9445bd40a0800000000000000
+      internalID: -6895656148124528732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_5
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 168
+        width: 11
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18ae7590455de940800000000000000
+      internalID: 5327007670123538461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_6
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 164
+        width: 28
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7adf3deca2b9750800000000000000
+      internalID: 6312686370498127844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 143
+        width: 23
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77706175d3c3ae900800000000000000
+      internalID: 714449725043378039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_8
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 141
+        width: 17
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fa6a1fb71059510800000000000000
+      internalID: 1555150878173212449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_9
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 141
+        width: 17
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5909139dd4ea7b0800000000000000
+      internalID: -5211142123586284092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_10
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 140
+        width: 16
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c620bcde343c40030800000000000000
+      internalID: 3460105110247113324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_11
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 142
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd15669fcf8cfb30800000000000000
+      internalID: 4322487864113044980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_12
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 141
+        width: 50
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb97421fb9c01920800000000000000
+      internalID: 2959086777665035242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 124
+        width: 6
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95bee1c371aaf97a0800000000000000
+      internalID: -6368184331308962983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_14
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 93
+        width: 25
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027875c7d6f0d1bc0800000000000000
+      internalID: -3810872746773608672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_15
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 93
+        width: 11
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee43555910796f10800000000000000
+      internalID: 2263463541838401252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 104
+        width: 6
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ea2e21713ad75d0800000000000000
+      internalID: -3063112852045648235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_17
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 111
+        width: 23
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb97b5679f1b6e40800000000000000
+      internalID: 5650644892573473777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_18
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 109
+        width: 17
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895edd87dcc127740800000000000000
+      internalID: 5148208992859579800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_19
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 109
+        width: 17
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b6fb0aa66a735a0800000000000000
+      internalID: -6541576956838712430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_20
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 89
+        width: 28
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a279a14be7d9320800000000000000
+      internalID: 2566346674676378149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_21
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 84
+        width: 25
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6982991bb06e63690800000000000000
+      internalID: -7622652381379352426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_22
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 84
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8b45df379b06cd0800000000000000
+      internalID: -2566847879778617142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_23
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 80
+        width: 28
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60b7b00d4a8147a0800000000000000
+      internalID: -6394677932560240531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_24
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 56
+        width: 16
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ffda84e8d4b0c50800000000000000
+      internalID: 6632480149733244673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_25
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 58
+        width: 12
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d54e302b5fbf1c0800000000000000
+      internalID: -4468708060316803754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_26
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 57
+        width: 50
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c6163cacd3b16a0800000000000000
+      internalID: -6477515697971696502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_27
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 34
+        width: 16
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c245fbd3c3cbaa0800000000000000
+      internalID: -6143969555739562983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_28
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 36
+        width: 12
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1b8eaf882a5e930800000000000000
+      internalID: 4171919339037438401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gress_29
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 35
+        width: 50
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f6bee71358969d0800000000000000
+      internalID: -2780544847295320179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

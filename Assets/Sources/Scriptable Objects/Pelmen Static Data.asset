@@ -50,6 +50,8 @@ MonoBehaviour:
     PelmenHatType: 3
   - Sprite: {fileID: 6692362231920049984, guid: 72fd22f6a6c2e9844a338de2d12e881a, type: 3}
     PelmenHatType: 5
+  - Sprite: {fileID: -5920429375048883771, guid: 72fd22f6a6c2e9844a338de2d12e881a, type: 3}
+    PelmenHatType: 7
   colors:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 0.9529412, b: 0.7764706, a: 1}

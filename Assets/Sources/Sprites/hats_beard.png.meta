@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 6692362231920049984
     second: hats_beard_6
+  - first:
+      213: -5920429375048883771
+    second: hats_beard_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -122,7 +125,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6
-        y: 22
+        y: 71
         width: 37
         height: 11
       alignment: 9
@@ -143,7 +146,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 21
+        y: 70
         width: 24
         height: 11
       alignment: 9
@@ -164,7 +167,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 119
-        y: 20
+        y: 72
         width: 16
         height: 14
       alignment: 9
@@ -185,7 +188,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 171
-        y: 22
+        y: 71
         width: 21
         height: 10
       alignment: 9
@@ -206,7 +209,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 227
-        y: 10
+        y: 59
         width: 10
         height: 2
       alignment: 0
@@ -227,7 +230,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 245
-        y: 6
+        y: 55
         width: 7
         height: 5
       alignment: 0
@@ -248,7 +251,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 259
-        y: 20
+        y: 69
         width: 15
         height: 6
       alignment: 9
@@ -260,6 +263,27 @@ TextureImporter:
       bones: []
       spriteID: 04fb5d50efb00ec50800000000000000
       internalID: 6692362231920049984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hats_beard_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 25
+        width: 37
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: -2.130879}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c16c66e9d866dda0800000000000000
+      internalID: -5920429375048883771
       vertices: []
       indices: 
       edges: []

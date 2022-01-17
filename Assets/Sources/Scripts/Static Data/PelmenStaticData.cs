@@ -23,10 +23,11 @@ public enum PelmenHatType
     Base,
     Cowboy,
     Devil,
-    Papadur,
-    Rock,
+    Emo,
+    Xmas,
     Arrow,
-    Random
+    Random,
+    VanGogh
 }
 [Serializable]
 public class PelmenFaceData
