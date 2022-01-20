@@ -52,3 +52,18 @@ MonoBehaviour:
     - {fileID: -2780544847295320179, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
     SpawnCount: 700
     SpawnRadius: 35
+  - Prefab: {fileID: 9216338701649631330, guid: 884ceeb66e2cc5b44bff1b822ae44a39, type: 3}
+    GressSprites:
+    - {fileID: 5171221398253030913, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
+    - {fileID: -5265537426725716387, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
+    - {fileID: -1842656057284236593, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
+    - {fileID: -5748754869296003714, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
+    - {fileID: 1759472493345842592, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
+    - {fileID: -1866489290812987814, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
+    - {fileID: -4567193357162841080, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
+    - {fileID: -4667342283382957069, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
+    - {fileID: 4982842197649876010, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
+    - {fileID: 4016805582573421726, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
+    - {fileID: 2067550640699417137, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
+    SpawnCount: 150
+    SpawnRadius: 35

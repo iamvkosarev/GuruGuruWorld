@@ -29,7 +29,7 @@ namespace Client {
             var pelmenView = characterView.GetComponent<PelmenView>();
             moverCom.RotatingParts = characterView.RotatingParts;
 
-            world.AddPelmenCom(newEntity, pelmenView, true, PelmenHatType.VanGogh,false);
+            world.AddPelmenCom(newEntity, pelmenView, true, PelmenHatType.Emo,false);
             world.AddEaterCom(newEntity, moverCom.Body, moverCom.RotatingParts[0]);
 
 
