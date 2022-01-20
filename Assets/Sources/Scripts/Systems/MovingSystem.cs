@@ -54,8 +54,10 @@ namespace Client {
                             else
                             {
                                 moverCom.Speed = 0f;
+                                moverCom.Animator.SetTrigger("Idle");
                                 moverCom.WantJump = false;
-                                moverCom.JumpPauseSpandedTime = moverCom.MovingStaticData.JumpPauseTime;
+                                moverCom.JumpPauseSpandedTime = UnityEngine.Random.Range(moverCom.MovingStaticData.JumpPauseTime.x,
+                                    moverCom.MovingStaticData.JumpPauseTime.y);
                                 moverCom.JumpSpandedTime =0f;
                             }
                         }

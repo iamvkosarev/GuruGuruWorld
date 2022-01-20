@@ -13,6 +13,7 @@ namespace Client {
             {
                 ref var npcCom = ref npcFilter.Get1(i);
                 ref var moverCom = ref npcFilter.Get2(i);
+                if (moverCom.MovingStaticData.IsJumping && moverCom.WantJump) { continue; }
 
                 var directionVector = npcCom.TargetPos - moverCom.Transform.position;
                 moverCom.Direction = (directionVector).normalized;

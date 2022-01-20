@@ -1,5 +1,6 @@
 using Leopotam.Ecs;
 using UnityEngine;
+using Voody.UniLeo;
 
 namespace Client {
     sealed class GameEcsStartup : MonoBehaviour {
@@ -73,27 +74,29 @@ namespace Client {
         }
         #endregion
         void Start () {
-            _staticData = staticData;
-            _shareData = shareData;
             world = new EcsWorld();
             updateSystem = new EcsSystems(world);
             fixedUpdateSystem = new EcsSystems(world);
             lateUpdateSystem = new EcsSystems(world);
 
+
             #region Editor
-#if UNITY_EDITOR
+            #if UNITY_EDITOR
             Leopotam.Ecs.UnityIntegration.EcsWorldObserver.Create(world);
             Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create(updateSystem);
             Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create(fixedUpdateSystem);
             Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create(lateUpdateSystem);
-#endif
+            #endif
             #endregion
 
+            _staticData = staticData;
+            _shareData = shareData;
             updateSystem
+                .ConvertScene()
                 .Add(new SpawnEnvironmentSystem())
                 .Add(new SpawnPlayerSystem())
                 .Add(new SpawnNPCSystem())
-                .Add(new SpawnButterflySystem())
+                .Add(new SpawnCreaturesySystem())
                 .Add(new IceCreamSystem())
                 .Add(new NPCInputSystem())
                 .Add(new PlayerInputSystem())

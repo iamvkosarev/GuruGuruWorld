@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34a64725a2d6b8e4f99a093a76092040, type: 3}
-  m_Name: Moving Pelmen
+  m_Name: Moving Rabbit
   m_EditorClassIdentifier: 
   IsJumping: 1
   Speed: 4
   TargetPosLength: {x: 5, y: 15}
-  JumpHight: 0.87
-  JumpTime: 0.9
-  JumpPauseTime: {x: 0, y: 0.3}
-  SetSpeedTime: 0.3
-  LoseSpeedTime: 0.7
+  JumpHight: 1.5
+  JumpTime: 0.7
+  JumpPauseTime: {x: 0.3, y: 1}
+  SetSpeedTime: 0.1
+  LoseSpeedTime: 0.5
   JumpCurve:
     serializedVersion: 2
     m_Curve:
@@ -33,22 +33,22 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.07179815
     - serializedVersion: 3
-      time: 0.50133836
+      time: 0.5040239
       value: 0.9997111
-      inSlope: 0.024641074
-      outSlope: 0.024641074
+      inSlope: -0.07669885
+      outSlope: -0.07669885
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.19123936
+      inWeight: 0.08098555
+      outWeight: 0.16313688
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: -4.061015
-      outSlope: -4.061015
+      inSlope: -6.233521
+      outSlope: -6.233521
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.09561968
+      inWeight: 0.039636016
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2

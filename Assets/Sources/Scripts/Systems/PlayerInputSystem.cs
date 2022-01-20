@@ -7,6 +7,7 @@ namespace Client {
         readonly EcsWorld world = null;
         readonly EcsFilter<PlayerComponent, MovingComponent> playerFilter;
 
+
         void IEcsRunSystem.Run () {
             foreach (var i in playerFilter)
             {

@@ -7,7 +7,6 @@ namespace Client {
         // auto-injected fields.
         readonly EcsWorld world = null;
         readonly GameSceneDataView sceneData = null;
-        readonly GameShareDataView shareData = null;
         readonly GameStaticData staticData = null;
 
         public void Init () {
