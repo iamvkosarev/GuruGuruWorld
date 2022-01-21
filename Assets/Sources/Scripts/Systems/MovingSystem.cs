@@ -35,13 +35,17 @@ namespace Client {
                             }
                             if (moverCom.JumpSpandedTime < moverCom.MovingStaticData.JumpTime)
                             {
-                                var pos = moverCom.Body.localPosition;
 
                                 if(moverCom.JumpSpandedTime > moverCom.MovingStaticData.SetSpeedTime && moverCom.JumpSpandedTime < moverCom.MovingStaticData.LoseSpeedTime)
                                 {
                                     moverCom.Speed = moverCom.MovingStaticData.Speed * moverCom.IncreasingSpeedValue + 0.001f;
-                                    moverCom.Body.localPosition = 
-                                        new Vector3(pos.x, moverCom.MovingStaticData.JumpCurve.Evaluate(Mathf.Clamp01((moverCom.JumpSpandedTime - moverCom.MovingStaticData.SetSpeedTime )/ (moverCom.MovingStaticData.LoseSpeedTime - moverCom.MovingStaticData.SetSpeedTime))) * moverCom.MovingStaticData.JumpHight);
+                                    foreach (var movingPart in moverCom.MovingParts)
+                                    {
+
+                                        var pos = movingPart.localPosition;
+                                        movingPart.localPosition =
+                                            new Vector3(pos.x, moverCom.MovingStaticData.JumpCurve.Evaluate(Mathf.Clamp01((moverCom.JumpSpandedTime - moverCom.MovingStaticData.SetSpeedTime) / (moverCom.MovingStaticData.LoseSpeedTime - moverCom.MovingStaticData.SetSpeedTime))) * moverCom.MovingStaticData.JumpHight);
+                                    }
                                 }
                                 else if (moverCom.JumpSpandedTime >= moverCom.MovingStaticData.LoseSpeedTime)
                                 {

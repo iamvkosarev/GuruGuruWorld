@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Moving Pelmen
   m_EditorClassIdentifier: 
   IsJumping: 1
-  Speed: 4
-  TargetPosLength: {x: 5, y: 15}
-  JumpHight: 0.87
-  JumpTime: 0.9
+  Speed: 40
+  TargetPosLength: {x: 50, y: 150}
+  JumpHight: 8.8
+  JumpTime: 1
   JumpPauseTime: {x: 0, y: 0.3}
   SetSpeedTime: 0.3
   LoseSpeedTime: 0.7

@@ -15,43 +15,63 @@ MonoBehaviour:
   PelmenFaces:
   - Sprite: {fileID: -2947167315047256872, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 0
-  - Sprite: {fileID: 3797566039774432171, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
-    PelmenFaceType: 3
+    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
   - Sprite: {fileID: -4122173218477165418, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 4
+    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
   - Sprite: {fileID: -5831263107636501562, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 5
+    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
   - Sprite: {fileID: -5531519331545463891, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 11
+    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
   - Sprite: {fileID: 6447667869744367629, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 1
+    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
   - Sprite: {fileID: 8372581647009413146, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 9
+    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
   - Sprite: {fileID: 1130075476240362073, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 7
+    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
   - Sprite: {fileID: -4255000521028527118, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 8
+    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
   - Sprite: {fileID: 8547388303434181623, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 2
+    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
   - Sprite: {fileID: 8963238444289827078, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 6
+    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
   - Sprite: {fileID: -5554099390889633535, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 10
+    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
+  PelmenAss:
+    Sprite: {fileID: 3797566039774432171, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    PelmenFaceType: 3
+    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
   PelmenHats:
   - Sprite: {fileID: 0}
     PelmenHatType: 0
+    HatLocalPos: {x: 0, y: 0, z: 0}
   - Sprite: {fileID: -8495549521497184353, guid: 72fd22f6a6c2e9844a338de2d12e881a, type: 3}
     PelmenHatType: 1
+    HatLocalPos: {x: -0.44, y: 0.26, z: 0}
   - Sprite: {fileID: 8165794902614568740, guid: 72fd22f6a6c2e9844a338de2d12e881a, type: 3}
     PelmenHatType: 2
+    HatLocalPos: {x: 0.54, y: -0.76, z: 0}
   - Sprite: {fileID: -5616771163335781300, guid: 72fd22f6a6c2e9844a338de2d12e881a, type: 3}
     PelmenHatType: 4
+    HatLocalPos: {x: -0.44, y: 0.65, z: 0}
   - Sprite: {fileID: 8410294537901344801, guid: 72fd22f6a6c2e9844a338de2d12e881a, type: 3}
     PelmenHatType: 3
+    HatLocalPos: {x: 0.03, y: -0.77, z: 0}
   - Sprite: {fileID: 6692362231920049984, guid: 72fd22f6a6c2e9844a338de2d12e881a, type: 3}
     PelmenHatType: 5
+    HatLocalPos: {x: -0.09, y: -0.8, z: 0}
   - Sprite: {fileID: -5920429375048883771, guid: 72fd22f6a6c2e9844a338de2d12e881a, type: 3}
     PelmenHatType: 7
+    HatLocalPos: {x: -0.51, y: 0.23, z: 0}
   colors:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 0.9529412, b: 0.7764706, a: 1}

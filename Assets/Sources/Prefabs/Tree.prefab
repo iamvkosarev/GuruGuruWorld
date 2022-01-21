@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4134940222147544838}
   - component: {fileID: 4134940222147544839}
   - component: {fileID: 4134940222147544837}
+  - component: {fileID: 7537155133869790228}
+  - component: {fileID: 3959714878424294513}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -83,7 +85,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 1
+  m_SpriteSortPoint: 0
 --- !u!61 &4134940222147544837
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -97,16 +99,47 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.035627365, y: -0.16058278}
+  m_Offset: {x: 0.42920804, y: 2.2009013}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4887796, y: 0.10575583}
-    oldSize: {x: 11.5, y: 11.5}
+    pivot: {x: 0.4860827, y: 0.05181837}
+    oldSize: {x: 115, y: 115}
     newSize: {x: 1.48, y: 1.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1266232, y: 1.0945878}
+  m_Size: {x: 13.575739, y: 4.9319987}
   m_EdgeRadius: 0
+--- !u!114 &7537155133869790228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4134940222147544832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 863c7f7460b2b49abb4fa9a7ff9cb180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  convertMode: 0
+--- !u!114 &3959714878424294513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4134940222147544832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0522e5240f7616144acd79a4a6039b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Offset: 0
+    RunOnlyOnce: 1
+    Renderer: {fileID: 4134940222147544839}
+    Transform: {fileID: 4134940222147544838}
+  color: {r: 0.990566, g: 0.115877494, b: 0.115877494, a: 1}

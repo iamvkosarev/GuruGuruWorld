@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Character Butterfly
   m_EditorClassIdentifier: 
   Prefab: {fileID: 8169760251888694298, guid: 35facda450495b04ab9624f5721b5f3b, type: 3}
+  SpawnRadius: 350
   MovingStaticData: {fileID: 11400000, guid: 306a103c6bb033d46a40d49d1a6f4437, type: 2}

@@ -69,6 +69,7 @@ namespace Client {
             {
                 pelmenView.HatSpriteRenderer.enabled = true;
                 pelmenView.HatSpriteRenderer.sprite = hatData.Sprite;
+                pelmenView.HatSpriteRenderer.transform.localPosition = hatData.HatLocalPos;
 
             }
         }
@@ -106,7 +107,8 @@ namespace Client {
             fixedUpdateSystem
                 .Add(new MovingSystem());
             lateUpdateSystem
-
+                .ConvertScene()
+                .Add(new PositionRendererSorterSystem())
                 .Add(new RotatingSystem());
 
 

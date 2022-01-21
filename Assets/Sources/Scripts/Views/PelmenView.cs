@@ -7,4 +7,5 @@ public class PelmenView : CharacterView
     public SpriteRenderer FaceSpriteRenderer;
     public SpriteRenderer BodySpriteRenderer;
     public SpriteRenderer HatSpriteRenderer;
+
 }

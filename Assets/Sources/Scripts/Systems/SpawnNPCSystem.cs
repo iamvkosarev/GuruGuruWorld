@@ -29,7 +29,7 @@ namespace Client {
 
             moverCom.Animator = characterView.Animator;
             moverCom.Transform = characterView.transform;
-            moverCom.Body = characterView.Body;
+            moverCom.MovingParts = characterView.MovingParts;
             moverCom.IncreasingSpeedValue = 1f;
             moverCom.JumpPauseSpandedTime = UnityEngine.Random.Range(0f, 1f);
             moverCom.MovingStaticData = characterStaticData.MovingStaticData;
@@ -37,14 +37,14 @@ namespace Client {
 
 
             world.AddPelmenCom(newEntity, pelmenView, true, PelmenHatType.Random, true);
-            world.AddEaterCom(newEntity, moverCom.Body, moverCom.RotatingParts[0]);
+            world.AddEaterCom(newEntity, moverCom.MovingParts[0], moverCom.RotatingParts[0]);
 
 
             ref var eaterCom = ref newEntity.Get<EaterComponent>();
             eaterCom.IceCreamTime = UnityEngine.Random.Range(4f, 8f);
 
 
-            characterView.transform.position = 20f * new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
+            characterView.transform.position = characterStaticData.SpawnRadius * new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
             float targetPosLength = UnityEngine.Random.Range(moverCom.MovingStaticData.TargetPosLength.x, moverCom.MovingStaticData.TargetPosLength.y);
             Vector2 circlePos = UnityEngine.Random.insideUnitCircle * targetPosLength;
             npcCom.TargetPos = moverCom.Transform.position + new Vector3(circlePos.x, circlePos.y);

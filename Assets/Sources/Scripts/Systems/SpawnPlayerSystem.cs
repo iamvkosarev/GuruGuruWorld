@@ -11,7 +11,7 @@ namespace Client {
 
         public void Init () {
 
-            var characterStaticData = staticData.CharactersStaticData.Pelmen;
+            var characterStaticData = staticData.CharactersStaticData.PlayerPelmen;
             var characterView = characterStaticData.Prefab.Instantiate(null);
 
             var newEntity = world.NewEntity();
@@ -21,7 +21,7 @@ namespace Client {
             sceneData.CinemachineVirtualCamera.Follow = characterView.transform;
             moverCom.Animator = characterView.Animator;
             moverCom.Transform = characterView.transform;
-            moverCom.Body = characterView.Body;
+            moverCom.MovingParts = characterView.MovingParts;
             moverCom.IncreasingSpeedValue = 1f;
             moverCom.MovingStaticData = characterStaticData.MovingStaticData;
             moverCom.RotatingParts = characterView.RotatingParts;
@@ -30,7 +30,7 @@ namespace Client {
             moverCom.RotatingParts = characterView.RotatingParts;
 
             world.AddPelmenCom(newEntity, pelmenView, true, PelmenHatType.Emo,false);
-            world.AddEaterCom(newEntity, moverCom.Body, moverCom.RotatingParts[0]);
+            world.AddEaterCom(newEntity, moverCom.MovingParts[0], moverCom.RotatingParts[0]);
 
 
             ref var eaterCom = ref newEntity.Get<EaterComponent>();

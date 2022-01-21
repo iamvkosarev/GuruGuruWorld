@@ -20,14 +20,14 @@ namespace Client {
                     {
                         for (int j = 0; j < moverCom.RotatingParts.Length; j++)
                         {
-                            moverCom.RotatingParts[j].localScale = new Vector3(1f * Mathf.Abs(moverCom.Body.localScale.y), moverCom.Body.localScale.y, moverCom.Body.localScale.z);
+                            moverCom.RotatingParts[j].localScale = new Vector3(1f * Mathf.Abs(moverCom.RotatingParts[j].localScale.x), moverCom.RotatingParts[j].localScale.y, moverCom.RotatingParts[j].localScale.z);
                         }
                     }
                     else if(Mathf.Sign(moverCom.Direction.x) < 0f && !moverCom.IsLookingLeft)
                     {
                         for (int j = 0; j < moverCom.RotatingParts.Length; j++)
                         {
-                            moverCom.RotatingParts[j].localScale = new Vector3(-1f * Mathf.Abs(moverCom.Body.localScale.y), moverCom.Body.localScale.y, moverCom.Body.localScale.z);
+                            moverCom.RotatingParts[j].localScale = new Vector3(-1f * Mathf.Abs(moverCom.RotatingParts[j].localScale.x), moverCom.RotatingParts[j].localScale.y, moverCom.RotatingParts[j].localScale.z);
                         }
                     }
                     moverCom.IsLookingLeft = !moverCom.IsLookingLeft;

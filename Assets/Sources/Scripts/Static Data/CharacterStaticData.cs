@@ -6,5 +6,6 @@ using UnityEngine;
 public class CharacterStaticData : ScriptableObject
 {
     public CharacterView Prefab;
+    public float SpawnRadius;
     public MovingStaticData MovingStaticData;
 }

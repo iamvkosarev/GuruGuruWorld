@@ -17,7 +17,7 @@ MonoBehaviour:
     GressSprites:
     - {fileID: 21300000, guid: 40b40e04c5146e6469799a6ed78c362d, type: 3}
     SpawnCount: 20
-    SpawnRadius: 35
+    SpawnRadius: 350
   - Prefab: {fileID: 9216338701649631330, guid: 884ceeb66e2cc5b44bff1b822ae44a39, type: 3}
     GressSprites:
     - {fileID: -4761368103044643773, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
@@ -51,7 +51,7 @@ MonoBehaviour:
     - {fileID: 4171919339037438401, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
     - {fileID: -2780544847295320179, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
     SpawnCount: 700
-    SpawnRadius: 35
+    SpawnRadius: 350
   - Prefab: {fileID: 9216338701649631330, guid: 884ceeb66e2cc5b44bff1b822ae44a39, type: 3}
     GressSprites:
     - {fileID: 5171221398253030913, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
@@ -66,4 +66,4 @@ MonoBehaviour:
     - {fileID: 4016805582573421726, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
     - {fileID: 2067550640699417137, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
     SpawnCount: 150
-    SpawnRadius: 35
+    SpawnRadius: 350

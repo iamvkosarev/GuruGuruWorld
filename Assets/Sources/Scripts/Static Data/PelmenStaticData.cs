@@ -34,6 +34,7 @@ public class PelmenFaceData
 {
     public Sprite Sprite;
     public PelmenFaceType PelmenFaceType;
+    public Vector3 FaceLocalPos;
 
 }
 [Serializable]
@@ -41,12 +42,14 @@ public class PelmenHatData
 {
     public Sprite Sprite;
     public PelmenHatType PelmenHatType;
+    public Vector3 HatLocalPos;
 
 }
 [CreateAssetMenu(menuName = "MyProject/Game/PelmenStaticData")]
 public class PelmenStaticData : ScriptableObject
 {
     public PelmenFaceData[] PelmenFaces;
+    public PelmenFaceData PelmenAss;
     public PelmenHatData[] PelmenHats;
     public Color[] colors;
 }

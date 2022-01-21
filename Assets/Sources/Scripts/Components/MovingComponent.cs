@@ -4,7 +4,8 @@ using UnityEngine;
 [Serializable]
 public struct MovingComponent
 {
-    public Transform Transform, Body;
+    public Transform Transform;
+    public Transform[] MovingParts;
     public Transform[] RotatingParts;
     public Vector3 Direction, JumpDirection;
     public Animator Animator;

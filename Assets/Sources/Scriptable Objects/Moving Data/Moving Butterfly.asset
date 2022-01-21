@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Moving Butterfly
   m_EditorClassIdentifier: 
   IsJumping: 0
-  Speed: 4
-  TargetPosLength: {x: 3, y: 5}
-  JumpHight: 0.87
+  Speed: 40
+  TargetPosLength: {x: 30, y: 50}
+  JumpHight: 8.7
   JumpTime: 0.9
-  JumpPauseTime: 0
+  JumpPauseTime: {x: 0, y: 0}
   SetSpeedTime: 0.3
   LoseSpeedTime: 0.7
   JumpCurve:

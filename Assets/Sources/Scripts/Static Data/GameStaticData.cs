@@ -12,4 +12,5 @@ public class GameStaticData : ScriptableObject
     public PelmenStaticData PelmenStaticData;
     public EnvironmentStaticData EnvironmentStaticData;
     public IceCreamStaticData IceCreamStaticData;
+    public PositionRenserSorterStaticData PositionRenserSorterStaticData;
 }

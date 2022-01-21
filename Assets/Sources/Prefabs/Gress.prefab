@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9216338701649631328}
   - component: {fileID: 9216338701649631331}
+  - component: {fileID: 7079821776509968641}
+  - component: {fileID: 1922154205890348727}
   m_Layer: 0
   m_Name: Gress
   m_TagString: Untagged
@@ -82,4 +84,35 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 1
+  m_SpriteSortPoint: 0
+--- !u!114 &7079821776509968641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9216338701649631330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 863c7f7460b2b49abb4fa9a7ff9cb180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  convertMode: 0
+--- !u!114 &1922154205890348727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9216338701649631330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0522e5240f7616144acd79a4a6039b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Offset: 0
+    RunOnlyOnce: 1
+    Renderer: {fileID: 9216338701649631331}
+    Transform: {fileID: 9216338701649631328}
+  color: {r: 1, g: 1, b: 1, a: 1}

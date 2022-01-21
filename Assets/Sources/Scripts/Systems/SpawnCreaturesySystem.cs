@@ -24,24 +24,24 @@ namespace Client {
 
         private void SpawnNPCButterfly()
         {
-            var characterStaticData = staticData.CharactersStaticData.Butterfly;
-            var characterView = characterStaticData.Prefab.Instantiate(creaturesParent);
+            var creatureStaticData = staticData.CharactersStaticData.Butterfly;
+            var creatureView = creatureStaticData.Prefab.Instantiate(creaturesParent);
 
             var newEntity = world.NewEntity();
             ref var moverCom = ref newEntity.Get<MovingComponent>();
             ref var npcCom = ref newEntity.Get<NPCComponent>();
 
-            moverCom.Animator = characterView.Animator;
-            moverCom.Transform = characterView.transform;
-            moverCom.Body = characterView.Body;
+            moverCom.Animator = creatureView.Animator;
+            moverCom.Transform = creatureView.transform;
+            moverCom.MovingParts = creatureView.MovingParts;
             moverCom.IncreasingSpeedValue = 1f;
             moverCom.JumpPauseSpandedTime = UnityEngine.Random.Range(0f, 1f);
-            moverCom.MovingStaticData = characterStaticData.MovingStaticData;
-            moverCom.RotatingParts = characterView.RotatingParts;
+            moverCom.MovingStaticData = creatureStaticData.MovingStaticData;
+            moverCom.RotatingParts = creatureView.RotatingParts;
 
 
-            SetColor(ref characterView);
-            characterView.transform.position = 20f * new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
+            SetColor(ref creatureView);
+            creatureView.transform.position = creatureStaticData.SpawnRadius * new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
             float targetPosLength = UnityEngine.Random.Range(moverCom.MovingStaticData.TargetPosLength.x, moverCom.MovingStaticData.TargetPosLength.y);
             Vector2 circlePos = UnityEngine.Random.insideUnitCircle * targetPosLength;
             npcCom.TargetPos = moverCom.Transform.position + new Vector3(circlePos.x, circlePos.y);
@@ -49,22 +49,22 @@ namespace Client {
         private void SpawnNPCRabbit()
         {
             var creatureStaticData = staticData.CharactersStaticData.Rabbit;
-            var characterView = creatureStaticData.Prefab.Instantiate(creaturesParent);
+            var creatureView = creatureStaticData.Prefab.Instantiate(creaturesParent);
 
             var newEntity = world.NewEntity();
             ref var moverCom = ref newEntity.Get<MovingComponent>();
             ref var npcCom = ref newEntity.Get<NPCComponent>();
 
-            moverCom.Animator = characterView.Animator;
-            moverCom.Transform = characterView.transform;
-            moverCom.Body = characterView.Body;
+            moverCom.Animator = creatureView.Animator;
+            moverCom.Transform = creatureView.transform;
+            moverCom.MovingParts = creatureView.MovingParts;
             moverCom.IncreasingSpeedValue = 1f;
             moverCom.JumpPauseSpandedTime = UnityEngine.Random.Range(0f, 1f);
             moverCom.MovingStaticData = creatureStaticData.MovingStaticData;
-            moverCom.RotatingParts = characterView.RotatingParts;
+            moverCom.RotatingParts = creatureView.RotatingParts;
 
 
-            characterView.transform.position = 20f * new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
+            creatureView.transform.position = creatureStaticData.SpawnRadius * new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
             float targetPosLength = UnityEngine.Random.Range(moverCom.MovingStaticData.TargetPosLength.x, moverCom.MovingStaticData.TargetPosLength.y);
             Vector2 circlePos = UnityEngine.Random.insideUnitCircle * targetPosLength;
             npcCom.TargetPos = moverCom.Transform.position + new Vector3(circlePos.x, circlePos.y);

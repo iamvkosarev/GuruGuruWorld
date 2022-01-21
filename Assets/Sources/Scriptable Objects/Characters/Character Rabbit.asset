@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Character Rabbit
   m_EditorClassIdentifier: 
   Prefab: {fileID: 2830838603664981898, guid: bab1333adcfdb8141b1de0495285d15d, type: 3}
+  SpawnRadius: 350
   MovingStaticData: {fileID: 11400000, guid: 31f05acac79547943b0061fa48127519, type: 2}

@@ -11,12 +11,14 @@ namespace Client {
         readonly EcsFilter<PelmenComponent,TargetedFaceComponent> targetedFaceFilter = null;
 
         private Dictionary<PelmenFaceType, PelmenFaceData> pelmenFaceDictionary = new Dictionary<PelmenFaceType, PelmenFaceData>();
+        private PelmenFaceData pelmenAss;
         void IEcsInitSystem.Init()
         {
             foreach (var pelmenFace in staticData.PelmenStaticData.PelmenFaces)
             {
                 pelmenFaceDictionary.Add(pelmenFace.PelmenFaceType, pelmenFace);
             }
+            pelmenAss = staticData.PelmenStaticData.PelmenAss;
             foreach (var i in pelmenFilter)
             {
                 ref var pelmenCom = ref pelmenFilter.Get1(i);
@@ -29,8 +31,8 @@ namespace Client {
                 foreach (var i in pelmenFilter)
                 {
                     ref var moverCom = ref pelmenFilter.Get2(i);
-                    world.AddTargetedFace(pelmenFilter.GetEntity(i), moverCom.Body, GetRandomPelmen(i), GetRandomFace(), 20f, moverCom.RotatingParts[0]);
-                    world.AddTargetedFace(pelmenFilter.GetEntity(i), moverCom.Body, GetRandomPelmen(i), GetRandomFace(), 20f, moverCom.RotatingParts[0]);
+                    world.AddTargetedFace(pelmenFilter.GetEntity(i), moverCom.Transform, GetRandomPelmen(i), GetRandomFace(), 20f, moverCom.RotatingParts[0]);
+                    world.AddTargetedFace(pelmenFilter.GetEntity(i), moverCom.Transform, GetRandomPelmen(i), GetRandomFace(), 20f, moverCom.RotatingParts[0]);
                 }
             }
         }
@@ -58,7 +60,7 @@ namespace Client {
                 index += 1;
                 index %= pelmenFilter.GetEntitiesCount();
             }
-            return pelmenFilter.Get2(index).Body;
+            return pelmenFilter.Get2(index).Transform;
         }
 
         void IEcsRunSystem.Run () {
@@ -69,13 +71,15 @@ namespace Client {
 
                 if(moverCom.Direction.y > 0f)
                 {
-                    pelmenCom.Face.sprite = pelmenFaceDictionary[PelmenFaceType.Ass].Sprite;
+                    pelmenCom.Face.sprite = pelmenAss.Sprite;
+                    pelmenCom.Face.transform.localPosition = pelmenAss.FaceLocalPos;
                 }
                 else
                 {
                     if(pelmenCom.Face.sprite != pelmenFaceDictionary[pelmenCom.FaceType].Sprite)
                     {
                         pelmenCom.Face.sprite = pelmenFaceDictionary[pelmenCom.FaceType].Sprite;
+                        pelmenCom.Face.transform.localPosition = pelmenFaceDictionary[pelmenCom.FaceType].FaceLocalPos;
                     }
                 }
             }
@@ -84,6 +88,9 @@ namespace Client {
 
                 ref var pelmenCom = ref targetedFaceFilter.Get1(i);
                 ref var targetedFaceCom = ref targetedFaceFilter.Get2(i);
+
+
+
                 if(Vector3.Distance(targetedFaceCom.Object.position, targetedFaceCom.Target.position) <= targetedFaceCom.WorkingDistance && 
                     (targetedFaceCom.RotatingPart.localScale.x == -1 && targetedFaceCom.Object.position.x - targetedFaceCom.Target.position.x >= 0f ||
                     targetedFaceCom.RotatingPart.localScale.x == 1 && targetedFaceCom.Object.position.x - targetedFaceCom.Target.position.x <= 0f))
@@ -96,6 +103,8 @@ namespace Client {
 
                 }
             }
+
+
         }
 
     }

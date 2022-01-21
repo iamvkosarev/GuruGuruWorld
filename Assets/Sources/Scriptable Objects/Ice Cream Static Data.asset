@@ -118,7 +118,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  FallingSpeed: 5
+  FallingSpeed: 20
   SwitchingTime: 1
   LifeTime: 5
   PoolSize: 50

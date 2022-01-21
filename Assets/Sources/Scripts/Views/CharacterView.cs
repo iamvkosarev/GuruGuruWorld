@@ -5,6 +5,6 @@ using UnityEngine;
 public class CharacterView : MonoBehaviour
 {
     public Animator Animator;
-    public Transform Body;
+    public Transform[] MovingParts;
     public Transform[] RotatingParts;
 }

@@ -18,7 +18,7 @@ namespace Client {
                 var directionVector = npcCom.TargetPos - moverCom.Transform.position;
                 moverCom.Direction = (directionVector).normalized;
 
-                if(directionVector.magnitude < 1.4f)
+                if(directionVector.magnitude < 14f)
                 {
                     moverCom.JumpPauseSpandedTime = UnityEngine.Random.Range(0f,1f);
                     float targetPosLength = UnityEngine.Random.Range(moverCom.MovingStaticData.TargetPosLength.x, moverCom.MovingStaticData.TargetPosLength.y);

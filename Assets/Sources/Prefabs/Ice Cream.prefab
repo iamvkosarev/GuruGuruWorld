@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4254616222312211735}
   - component: {fileID: 4254616222312211734}
   - component: {fileID: 5528935782365694470}
+  - component: {fileID: 753268234136141177}
+  - component: {fileID: 9003210717248127073}
   m_Layer: 0
   m_Name: Ice Cream
   m_TagString: Untagged
@@ -118,3 +120,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animator: {fileID: 4254616222312211734}
   SpriteRenderer: {fileID: 4254616222312211735}
+--- !u!114 &753268234136141177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4254616222312211721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 863c7f7460b2b49abb4fa9a7ff9cb180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  convertMode: 0
+--- !u!114 &9003210717248127073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4254616222312211721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0522e5240f7616144acd79a4a6039b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Offset: 3
+    RunOnlyOnce: 0
+    Renderer: {fileID: 4254616222312211735}
+    Transform: {fileID: 4254616222312211732}
+  color: {r: 1, g: 1, b: 1, a: 1}
