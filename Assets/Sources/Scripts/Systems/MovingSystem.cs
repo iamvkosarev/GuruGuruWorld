@@ -20,7 +20,8 @@ namespace Client {
                     }
                     else
                     {
-                        if(moverCom.Direction.magnitude > 0.2f)
+                        bool wantJump = moverCom.WantJump;
+                        if (moverCom.Direction.magnitude > 0.2f)
                         {
                             moverCom.WantJump = true;
                             moverCom.JumpDirection = moverCom.Direction;
@@ -31,7 +32,11 @@ namespace Client {
                             if (moverCom.Speed == 0)
                             {
                                 moverCom.Speed = 0.001f;
+                            }
+                            if(wantJump != moverCom.WantJump)
+                            {
                                 moverCom.Animator.SetTrigger("Jump");
+
                             }
                             if (moverCom.JumpSpandedTime < moverCom.MovingStaticData.JumpTime)
                             {
@@ -58,11 +63,11 @@ namespace Client {
                             else
                             {
                                 moverCom.Speed = 0f;
-                                moverCom.Animator.SetTrigger("Idle");
                                 moverCom.WantJump = false;
                                 moverCom.JumpPauseSpandedTime = UnityEngine.Random.Range(moverCom.MovingStaticData.JumpPauseTime.x,
                                     moverCom.MovingStaticData.JumpPauseTime.y);
                                 moverCom.JumpSpandedTime =0f;
+                                moverCom.Animator.SetTrigger("Idle");
                             }
                         }
 

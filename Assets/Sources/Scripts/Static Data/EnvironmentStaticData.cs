@@ -17,4 +17,12 @@ public class EnvironmentData
 public class EnvironmentStaticData : ScriptableObject
 {
     public EnvironmentData[] EnvironmentDatas;
+    [Header("Rain")]
+    public Color RainColor;
+    public Color BaseColor;
+    public GameObject Rain;
+    public int RainPoolSize;
+    public Vector3 RainOffsetFromPlayer;
+    public Vector3 RainSpawnZoneSize;
+    public float RainSpawnTimerMax;
 }

@@ -67,3 +67,18 @@ MonoBehaviour:
     - {fileID: 2067550640699417137, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
     SpawnCount: 150
     SpawnRadius: 350
+  - Prefab: {fileID: 9216338701649631330, guid: 884ceeb66e2cc5b44bff1b822ae44a39, type: 3}
+    GressSprites:
+    - {fileID: -5160882468792293898, guid: 03a0abebec7b713449119b37ee9617f7, type: 3}
+    - {fileID: -4504313136273846663, guid: 03a0abebec7b713449119b37ee9617f7, type: 3}
+    - {fileID: 1383936162967933750, guid: 03a0abebec7b713449119b37ee9617f7, type: 3}
+    - {fileID: 2574490404313573443, guid: 03a0abebec7b713449119b37ee9617f7, type: 3}
+    SpawnCount: 100
+    SpawnRadius: 350
+  RainColor: {r: 0.39607844, g: 0.7176471, b: 0.5411765, a: 1}
+  BaseColor: {r: 0.24705882, g: 0.8117647, b: 0.37254903, a: 1}
+  Rain: {fileID: 1483312790664917706, guid: 87a4e5b28d8e90243a57e8adcd74f333, type: 3}
+  RainPoolSize: 500
+  RainOffsetFromPlayer: {x: 88.2, y: 89.2, z: 0}
+  RainSpawnZoneSize: {x: 140, y: 0, z: 0}
+  RainSpawnTimerMax: 0.01

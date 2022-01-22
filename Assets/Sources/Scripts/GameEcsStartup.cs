@@ -101,6 +101,7 @@ namespace Client {
                 .Add(new IceCreamSystem())
                 .Add(new NPCInputSystem())
                 .Add(new PlayerInputSystem())
+                .Add(new RainSystem())
                 .Add(new PelmenFaceSystem())
                 .Add(new PlayerAnimationSystem());
 
