@@ -23,7 +23,7 @@ namespace Client {
             {
                 ref var pelmenCom = ref pelmenFilter.Get1(i);
 
-                pelmenCom.FaceType = PelmenFaceType.Base;
+                pelmenCom.FaceType = pelmenCom.BaseFaceType;
             }
             if(pelmenFilter.GetEntitiesCount() > 1)
             {
@@ -99,7 +99,7 @@ namespace Client {
                 }
                 else
                 {
-                    pelmenCom.FaceType = PelmenFaceType.Base;
+                    pelmenCom.FaceType = pelmenCom.BaseFaceType;
 
                 }
             }

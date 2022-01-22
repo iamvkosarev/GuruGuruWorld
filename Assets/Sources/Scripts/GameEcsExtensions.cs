@@ -42,7 +42,7 @@ public static class GameEcsExtensions
         targetedFaceCom.RotatingPart = rotatingPart;
     }
 
-    public static void AddPelmenCom(this EcsWorld world, EcsEntity entity, PelmenView pelmenView, bool chooseHat = false, PelmenHatType pelmenHatType = PelmenHatType.Random, bool setColor = false)
+    public static void AddPelmenCom(this EcsWorld world, EcsEntity entity, PelmenView pelmenView, bool chooseHat = false, PelmenHatType pelmenHatType = PelmenHatType.Random, bool setColor = false, PelmenFaceType baseFaceType = PelmenFaceType.Base)
     {
         ref var pelmenCom = ref entity.Get<PelmenComponent>();
         GameEcsStartup.SelectHat(ref pelmenView, chooseHat, pelmenHatType);
@@ -54,6 +54,7 @@ public static class GameEcsExtensions
         }
         pelmenCom.ID = GameEcsStartup.GetPelmenID();
         pelmenCom.Face = pelmenView.FaceSpriteRenderer;
+        pelmenCom.BaseFaceType = baseFaceType;
     }
 
     

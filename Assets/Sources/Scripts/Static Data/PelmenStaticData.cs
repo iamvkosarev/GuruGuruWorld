@@ -16,7 +16,8 @@ public enum PelmenFaceType
     SadSimple,
     Talking_2,
     Disappointed,
-    Condemning_2
+    Condemning_2,
+    Dio
 }
 public enum PelmenHatType
 {
@@ -27,7 +28,8 @@ public enum PelmenHatType
     Xmas,
     Arrow,
     Random,
-    VanGogh
+    VanGogh,
+    Dio
 }
 [Serializable]
 public class PelmenFaceData
