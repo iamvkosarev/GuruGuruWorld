@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 72fd22f6a6c2e9844a338de2d12e881a
+guid: d9899f7f4fa4f834ba3db3ba373b7c5d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6692362231920049984
-    second: hats_beard_6
+      213: 7207882119082248946
+    second: fruits_0
   - first:
-      213: -5920429375048883771
-    second: hats_beard_7
+      213: -7817259731008224619
+    second: fruits_1
   - first:
-      213: -4411120311650305859
-    second: hats_beard_8
+      213: 8459430566571322924
+    second: fruits_2
+  - first:
+      213: 1251309877831849473
+    second: fruits_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -124,190 +127,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hats_beard_0
+      name: fruits_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 71
-        width: 37
-        height: 11
-      alignment: 9
-      pivot: {x: 0.5, y: -2.130879}
+        x: 18
+        y: 18
+        width: 12
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f97ab67b8beb91a80800000000000000
-      internalID: -8495549521497184353
+      spriteID: 2fa89ca299a870460800000000000000
+      internalID: 7207882119082248946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hats_beard_1
+      name: fruits_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 70
-        width: 24
-        height: 11
-      alignment: 9
-      pivot: {x: 0.52387553, y: -2.1512249}
+        x: 13
+        y: 7
+        width: 11
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42f690f133bb25170800000000000000
-      internalID: 8165794902614568740
+      spriteID: 5920a4831b3838390800000000000000
+      internalID: -7817259731008224619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hats_beard_2
+      name: fruits_2
       rect:
         serializedVersion: 2
-        x: 119
-        y: 72
-        width: 16
-        height: 14
-      alignment: 9
-      pivot: {x: 0.53440523, y: -1.692439}
+        x: 35
+        y: 9
+        width: 12
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4496b8c2683d02b0800000000000000
-      internalID: -5616771163335781300
+      spriteID: c2ea092c74fe56570800000000000000
+      internalID: 8459430566571322924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hats_beard_3
+      name: fruits_3
       rect:
         serializedVersion: 2
-        x: 171
-        y: 71
-        width: 21
-        height: 10
-      alignment: 9
-      pivot: {x: 0.5, y: -2.2535238}
+        x: 54
+        y: 7
+        width: 11
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1288404925e57b470800000000000000
-      internalID: 8410294537901344801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hats_beard_4
-      rect:
-        serializedVersion: 2
-        x: 227
-        y: 59
-        width: 10
-        height: 2
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17bc9e9586cdf1660800000000000000
-      internalID: 7358842656889883505
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hats_beard_5
-      rect:
-        serializedVersion: 2
-        x: 245
-        y: 55
-        width: 7
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d04d0aea10d4f26b0800000000000000
-      internalID: -5318947965281184755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hats_beard_6
-      rect:
-        serializedVersion: 2
-        x: 259
-        y: 69
-        width: 15
-        height: 6
-      alignment: 9
-      pivot: {x: 1.5571065, y: -3.431087}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04fb5d50efb00ec50800000000000000
-      internalID: 6692362231920049984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hats_beard_7
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 25
-        width: 37
-        height: 11
-      alignment: 9
-      pivot: {x: 0.5, y: -2.130879}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c16c66e9d866dda0800000000000000
-      internalID: -5920429375048883771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hats_beard_8
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 25
-        width: 22
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db8b29a927d88c2c0800000000000000
-      internalID: -4411120311650305859
+      spriteID: 106da1444bb8d5110800000000000000
+      internalID: 1251309877831849473
       vertices: []
       indices: 
       edges: []

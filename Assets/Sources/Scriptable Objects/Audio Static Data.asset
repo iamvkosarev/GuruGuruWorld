@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 283fc9225f1888643a3e04faf7912bb0, type: 3}
   m_Name: Audio Static Data
   m_EditorClassIdentifier: 
+  ClipDatas:
+  - ClipType: 0
+    Clip: {fileID: 8300000, guid: a4f75021910cd5340913aafbef47cd4b, type: 3}

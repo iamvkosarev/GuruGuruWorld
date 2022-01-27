@@ -73,7 +73,15 @@ MonoBehaviour:
     - {fileID: -4504313136273846663, guid: 03a0abebec7b713449119b37ee9617f7, type: 3}
     - {fileID: 1383936162967933750, guid: 03a0abebec7b713449119b37ee9617f7, type: 3}
     - {fileID: 2574490404313573443, guid: 03a0abebec7b713449119b37ee9617f7, type: 3}
-    SpawnCount: 100
+    SpawnCount: 0
+    SpawnRadius: 350
+  - Prefab: {fileID: 6442709339354836656, guid: 55b5f436676a77d4caa4fdaa8ba21a7c, type: 3}
+    GressSprites:
+    - {fileID: 7207882119082248946, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    - {fileID: -7817259731008224619, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    - {fileID: 8459430566571322924, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    - {fileID: 1251309877831849473, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    SpawnCount: 150
     SpawnRadius: 350
   RainColor: {r: 0.39607844, g: 0.7176471, b: 0.5411765, a: 1}
   BaseColor: {r: 0.24705882, g: 0.8117647, b: 0.37254903, a: 1}

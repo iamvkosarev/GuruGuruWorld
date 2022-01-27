@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48680a1ac011d2f43acdac73a653a5d1, type: 3}
   m_Name: Character Pelmen
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 7100858703260330641, guid: 0532934f87758ce46954f08e74ffa329, type: 3}
+  Prefab: {fileID: 7100858703260330641, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
   SpawnRadius: 350
   MovingStaticData: {fileID: 11400000, guid: 7223faf452771c24b8a8cd05c538f4a9, type: 2}

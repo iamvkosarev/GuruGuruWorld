@@ -31,6 +31,12 @@ public static class GameEcsExtensions
         eaterCom.EaterTransform = eaterTransform;
         eaterCom.RotatingPart = rotatingTransform;
     }
+    public static void AddEaterCom(this EcsWorld world,  ClipType clipType)
+    {
+        var entity = world.NewEntity();
+        ref var com = ref entity.Get<PlayClipComponent>();
+        com.ClipType = clipType;
+    }
 
     public static void AddTargetedFace(this EcsWorld world, EcsEntity entity, Transform @object,Transform target, PelmenFaceType pelmenFaceType, float workingDistance, Transform rotatingPart)
     {

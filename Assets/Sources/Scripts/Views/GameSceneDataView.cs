@@ -7,4 +7,6 @@ public class GameSceneDataView : MonoBehaviour
 {
     public Camera MainCamera;
     public CinemachineVirtualCamera CinemachineVirtualCamera;
+    public CanvasView CanvasView;
+    public AudioSource AudioSource;
 }

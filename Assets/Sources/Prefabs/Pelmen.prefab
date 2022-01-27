@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 3974896720206667220}
   - component: {fileID: 2729688854073837659}
   m_Layer: 6
-  m_Name: Character Pelmen
+  m_Name: Pelmen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
