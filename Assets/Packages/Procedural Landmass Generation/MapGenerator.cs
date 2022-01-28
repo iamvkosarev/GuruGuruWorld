@@ -47,7 +47,7 @@ public class MapGenerator : MonoBehaviour {
 		}
 	}
 
-	public Dictionary<TerrainType, List<int[]>> GenerateMap()
+	public Dictionary<TerrainType, List<int[]>> GenerateMap(out int width, out int hight)
 	{
 		float[,] noiseMap = Noise.GenerateNoiseMap(mapWidth, mapHeight, Seed, noiseScale, octaves, persistance, lacunarity, offset);
 
@@ -83,7 +83,8 @@ public class MapGenerator : MonoBehaviour {
 				}
 			}
 		}
-
+		width = mapWidth;
+		hight = mapHeight;
 		return result;
 	}
 

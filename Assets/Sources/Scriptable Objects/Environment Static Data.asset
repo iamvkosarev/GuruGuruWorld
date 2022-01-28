@@ -137,7 +137,7 @@ MonoBehaviour:
     - {fileID: -7820381653269175936, guid: e8026d2b588d4694d8f9a429ac7e58a6, type: 3}
     - {fileID: 5362339452504853210, guid: e8026d2b588d4694d8f9a429ac7e58a6, type: 3}
     - {fileID: 6217416108776383668, guid: e8026d2b588d4694d8f9a429ac7e58a6, type: 3}
-    SpawnCount: 1000
+    SpawnCount: 0
     SpawnRadius: 350
     TerrainTypes: 05000000
   RainColor: {r: 0.39607844, g: 0.7176471, b: 0.5411765, a: 1}
