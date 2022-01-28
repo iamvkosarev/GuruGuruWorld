@@ -35,11 +35,12 @@ namespace Client {
                 {
                     if (collider.gameObject.TryGetComponent<FoodView>(out var food))
                     {
-                        if(Vector3.Distance(com.MouthPoint.position, food.transform.position) < 5f)
+                        if(Vector3.Distance(com.MouthPoint.position, food.transform.position) < com.MouthSize.x/2f)
                         {
                             com.ShowingSliderTimer = com.ShowingSliderTimerMax;
                             com.EatenPoints = Mathf.Min(com.EatenPoints + food.AddingPoints, com.MaxEatenPoints);
                             com.Slider.value = com.EatenPoints;
+                            com.EatingVFX.startColor = food.Color;
                             com.EatingVFX.Play();
                             world.AddEaterCom(ClipType.PickUpFood);
                             collider.enabled = false;

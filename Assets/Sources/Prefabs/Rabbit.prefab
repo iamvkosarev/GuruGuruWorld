@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value:
-    Offset: 0
+    Offset: 1
     RunOnlyOnce: 0
     Renderer: {fileID: 6411823890294196520}
     Transform: {fileID: 6336090876772290516}
@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 8782080538365169488}
   - component: {fileID: 7721511400341904095}
   - component: {fileID: 2830838603664981898}
+  - component: {fileID: 8416481805962856993}
   m_Layer: 6
   m_Name: Rabbit
   m_TagString: Untagged
@@ -234,3 +235,17 @@ MonoBehaviour:
   - {fileID: 1507269696055596261}
   RotatingParts:
   - {fileID: 1507269696055596261}
+--- !u!114 &8416481805962856993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8157238601201778783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1afb8d0b461350b47808284e861fb1f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddingPoints: 20
+  Color: {r: 0.9056604, g: 0.5661801, b: 0.39643997, a: 1}

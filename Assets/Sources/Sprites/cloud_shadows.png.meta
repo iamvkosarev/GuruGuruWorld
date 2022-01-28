@@ -1,55 +1,43 @@
 fileFormatVersion: 2
-guid: d9899f7f4fa4f834ba3db3ba373b7c5d
+guid: a91aae86773f2324598025f8b2630f97
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7207882119082248946
-    second: fruits_0
+      213: -83352433110821875
+    second: cloud_shadows_0
   - first:
-      213: -7817259731008224619
-    second: fruits_1
+      213: -8785683108810563832
+    second: cloud_shadows_1
   - first:
-      213: 8459430566571322924
-    second: fruits_2
+      213: 9136448194327540126
+    second: cloud_shadows_2
   - first:
-      213: 1251309877831849473
-    second: fruits_3
+      213: -6179713241496694125
+    second: cloud_shadows_3
   - first:
-      213: -767586789930468712
-    second: Food Apples_0
+      213: 8286277301314257284
+    second: cloud_shadows_4
   - first:
-      213: 5237923808373020117
-    second: Food Apples_1
+      213: -8982335661503164598
+    second: cloud_shadows_5
   - first:
-      213: -1095436251151881504
-    second: Food Apples_2
+      213: -6216729250040229930
+    second: cloud_shadows_6
   - first:
-      213: -3973285445044648129
-    second: Food Apples_3
+      213: 5785940191107081714
+    second: cloud_shadows_7
   - first:
-      213: 1962456298315353651
-    second: Food Apples_4
+      213: 4275252913727940035
+    second: cloud_shadows_8
   - first:
-      213: -5899356258220907755
-    second: Food Apples_5
+      213: 3902165390978293250
+    second: cloud_shadows_9
   - first:
-      213: 8532012831159204382
-    second: Food Apples_6
+      213: 5869629580361506030
+    second: cloud_shadows_10
   - first:
-      213: 3309510407889414880
-    second: Food Apples_7
-  - first:
-      213: -1893316634204865261
-    second: Food Apples_8
-  - first:
-      213: -2151938821476498424
-    second: Food Apples_9
-  - first:
-      213: 4450588348491703316
-    second: Food Apples_10
-  - first:
-      213: 4273919566140803086
-    second: Food Apples_11
+      213: -8922152744523570543
+    second: cloud_shadows_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -163,253 +151,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Food Apples_0
+      name: cloud_shadows_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 58
-        width: 12
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 171
+        y: 164
+        width: 101
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89a79e3a1ebf855f0800000000000000
-      internalID: -767586789930468712
+      spriteID: d04d349576fd7def0800000000000000
+      internalID: -83352433110821875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food Apples_1
+      name: cloud_shadows_1
       rect:
         serializedVersion: 2
-        x: 87
-        y: 56
-        width: 12
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 292
+        y: 162
+        width: 133
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d592a6b3f7d0b840800000000000000
-      internalID: 5237923808373020117
+      spriteID: 80f5236d2cbf21680800000000000000
+      internalID: -8785683108810563832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food Apples_2
+      name: cloud_shadows_2
       rect:
         serializedVersion: 2
-        x: 13
-        y: 47
-        width: 11
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 75
+        y: 118
+        width: 139
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eaa100988a3cc0f0800000000000000
-      internalID: -1095436251151881504
+      spriteID: e91f6abc93f2bce70800000000000000
+      internalID: 9136448194327540126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food Apples_3
+      name: cloud_shadows_3
       rect:
         serializedVersion: 2
-        x: 35
+        x: 262
+        y: 128
+        width: 95
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392dfc26c8f3d3aa0800000000000000
+      internalID: -6179713241496694125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_shadows_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 107
+        width: 97
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481083f8d45cef270800000000000000
+      internalID: 8286277301314257284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_shadows_5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 60
+        width: 191
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fc7ca6e45585380800000000000000
+      internalID: -8982335661503164598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_shadows_6
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 75
+        width: 73
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df429a4fadb9b9a0800000000000000
+      internalID: -6216729250040229930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_shadows_7
+      rect:
+        serializedVersion: 2
+        x: 335
         y: 49
-        width: 12
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 116
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3742e860fd0cd8c0800000000000000
-      internalID: -3973285445044648129
+      spriteID: 2f5e796d2f9cb4050800000000000000
+      internalID: 5785940191107081714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food Apples_4
+      name: cloud_shadows_8
       rect:
         serializedVersion: 2
-        x: 54
-        y: 47
-        width: 11
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 99
+        y: 29
+        width: 112
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33e80541b9b0c3b10800000000000000
-      internalID: 1962456298315353651
+      spriteID: 3c525bfafdfb45b30800000000000000
+      internalID: 4275252913727940035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food Apples_5
+      name: cloud_shadows_9
       rect:
         serializedVersion: 2
-        x: 82
-        y: 45
-        width: 11
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 216
+        y: 40
+        width: 109
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 513e3414db6412ea0800000000000000
-      internalID: -5899356258220907755
+      spriteID: 20e9510afb6472630800000000000000
+      internalID: 3902165390978293250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food Apples_6
+      name: cloud_shadows_10
       rect:
         serializedVersion: 2
-        x: 104
-        y: 47
-        width: 12
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 205
+        y: 0
+        width: 88
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1ab154277cc76670800000000000000
-      internalID: 8532012831159204382
+      spriteID: eec9294310d157150800000000000000
+      internalID: 5869629580361506030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food Apples_7
+      name: cloud_shadows_11
       rect:
         serializedVersion: 2
-        x: 123
-        y: 45
-        width: 11
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 313
+        y: 8
+        width: 76
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eae4b27e2ebded20800000000000000
-      internalID: 3309510407889414880
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Food Apples_8
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 18
-        width: 12
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31d71ea6d8699b5e0800000000000000
-      internalID: -1893316634204865261
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Food Apples_9
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 7
-        width: 11
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80445871b07c222e0800000000000000
-      internalID: -2151938821476498424
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Food Apples_10
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 9
-        width: 12
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4142751d58aa3cd30800000000000000
-      internalID: 4450588348491703316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Food Apples_11
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 7
-        width: 11
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e080a628333005b30800000000000000
-      internalID: 4273919566140803086
+      spriteID: 19265e6b9552e2480800000000000000
+      internalID: -8922152744523570543
       vertices: []
       indices: 
       edges: []

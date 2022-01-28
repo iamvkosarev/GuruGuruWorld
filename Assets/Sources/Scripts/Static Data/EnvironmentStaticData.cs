@@ -6,10 +6,12 @@ using UnityEngine;
 [Serializable]
 public class EnvironmentData
 {
+    public string Name = "";
     public GameObject Prefab;
     public Sprite[] GressSprites;
     public int SpawnCount = 20;
     public float SpawnRadius = 35f;
+    public TerrainType[] TerrainTypes;
 
 }
 

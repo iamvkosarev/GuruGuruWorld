@@ -9,4 +9,5 @@ public class GameSceneDataView : MonoBehaviour
     public CinemachineVirtualCamera CinemachineVirtualCamera;
     public CanvasView CanvasView;
     public AudioSource AudioSource;
+    public MapGenerator MapGenerator;
 }

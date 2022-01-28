@@ -12,7 +12,7 @@ public class PositionRendererSorterProvider : MonoProvider<PositionRendererSorte
         Gizmos.color = color;
         if(value.Transform != null)
         {
-            Gizmos.DrawSphere(value.Transform.position + new Vector3(0, value.Offset), 1f);
+            Gizmos.DrawSphere(value.Transform.position + new Vector3(0, value.Offset), 0.4f);
 
         }
     }

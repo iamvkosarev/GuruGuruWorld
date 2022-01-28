@@ -13,12 +13,27 @@ MonoBehaviour:
   m_Name: Environment Static Data
   m_EditorClassIdentifier: 
   EnvironmentDatas:
-  - Prefab: {fileID: 4134940222147544832, guid: 3f99aefe44cb3154990508a14a2bcc1d, type: 3}
+  - Name: Pink Tree
+    Prefab: {fileID: 4134940222147544832, guid: 3f99aefe44cb3154990508a14a2bcc1d, type: 3}
     GressSprites:
-    - {fileID: 21300000, guid: 40b40e04c5146e6469799a6ed78c362d, type: 3}
-    SpawnCount: 20
+    - {fileID: -8667466294985060184, guid: 40b40e04c5146e6469799a6ed78c362d, type: 3}
+    SpawnCount: 30
     SpawnRadius: 350
-  - Prefab: {fileID: 9216338701649631330, guid: 884ceeb66e2cc5b44bff1b822ae44a39, type: 3}
+    TerrainTypes: 00000000
+  - Name: Pink Bush
+    Prefab: {fileID: 9216338701649631330, guid: c5795d90e9433c140a96f677cc3f7a87, type: 3}
+    GressSprites:
+    - {fileID: 5281997702118322174, guid: 40b40e04c5146e6469799a6ed78c362d, type: 3}
+    - {fileID: -3105659087322419395, guid: 40b40e04c5146e6469799a6ed78c362d, type: 3}
+    - {fileID: -25497680464327838, guid: 40b40e04c5146e6469799a6ed78c362d, type: 3}
+    - {fileID: -2187617102101193605, guid: 40b40e04c5146e6469799a6ed78c362d, type: 3}
+    - {fileID: 6962057269733102035, guid: 40b40e04c5146e6469799a6ed78c362d, type: 3}
+    - {fileID: -3386072866006247602, guid: 40b40e04c5146e6469799a6ed78c362d, type: 3}
+    SpawnCount: 200
+    SpawnRadius: 350
+    TerrainTypes: 0100000000000000
+  - Name: Gress
+    Prefab: {fileID: 9216338701649631330, guid: 884ceeb66e2cc5b44bff1b822ae44a39, type: 3}
     GressSprites:
     - {fileID: -4761368103044643773, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
     - {fileID: -9112099288549801003, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
@@ -29,30 +44,67 @@ MonoBehaviour:
     - {fileID: 6312686370498127844, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
     - {fileID: 714449725043378039, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
     - {fileID: 1555150878173212449, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: -5211142123586284092, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: 3460105110247113324, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: 4322487864113044980, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: 2959086777665035242, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: -6368184331308962983, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: -3810872746773608672, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: 2263463541838401252, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: -3063112852045648235, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: 5650644892573473777, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: 5148208992859579800, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: -6541576956838712430, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: 2566346674676378149, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: -7622652381379352426, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: -2566847879778617142, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: -6394677932560240531, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: 6632480149733244673, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: -4468708060316803754, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: -6477515697971696502, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: -6143969555739562983, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: 4171919339037438401, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    - {fileID: -2780544847295320179, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    SpawnCount: 700
+    SpawnCount: 1200
     SpawnRadius: 350
-  - Prefab: {fileID: 9216338701649631330, guid: 884ceeb66e2cc5b44bff1b822ae44a39, type: 3}
+    TerrainTypes: 02000000030000000000000001000000
+  - Name: Food Apple
+    Prefab: {fileID: 6442709339354836656, guid: 55b5f436676a77d4caa4fdaa8ba21a7c, type: 3}
+    GressSprites:
+    - {fileID: -767586789930468712, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    - {fileID: 5237923808373020117, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    - {fileID: -1095436251151881504, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    - {fileID: -3973285445044648129, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    - {fileID: 1962456298315353651, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    - {fileID: -5899356258220907755, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    - {fileID: 8532012831159204382, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    - {fileID: 3309510407889414880, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    - {fileID: -1893316634204865261, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    - {fileID: -2151938821476498424, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    - {fileID: 4450588348491703316, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    - {fileID: 4273919566140803086, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
+    SpawnCount: 150
+    SpawnRadius: 350
+    TerrainTypes: 0200000003000000
+  - Name: Flowers
+    Prefab: {fileID: 9216338701649631330, guid: 884ceeb66e2cc5b44bff1b822ae44a39, type: 3}
+    GressSprites:
+    - {fileID: -194818066077126744, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 7702638131693110658, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 1688127093310603583, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 7958929529641746168, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -7271880148870568012, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -1872591478575451559, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -5588888737662910949, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 2119802022730792222, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 5087154339777923634, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 3028422702807503905, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -2467277832640511131, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -7397708045047540520, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -3898872421415275176, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -4935714894498720909, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 6405367485782044311, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -2986059486176687141, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -4907192441395230533, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 3310741456530074652, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -8994999436323867118, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 7703376952451735685, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 79603516130197206, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 928392928442787175, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 6008794810784532240, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 515401629223650369, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -2514515654098470544, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 1361956904952742340, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -8239179822599446799, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 1068614255772709569, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -3928540349575310258, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -4186968539633268470, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: -6556402119703177869, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    - {fileID: 8274562977908428066, guid: bb68dd65db956b446855d7b98d8dfca0, type: 3}
+    SpawnCount: 300
+    SpawnRadius: 350
+    TerrainTypes: 03000000
+  - Name: Stone
+    Prefab: {fileID: 9216338701649631330, guid: 884ceeb66e2cc5b44bff1b822ae44a39, type: 3}
     GressSprites:
     - {fileID: 5171221398253030913, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
     - {fileID: -5265537426725716387, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
@@ -65,9 +117,11 @@ MonoBehaviour:
     - {fileID: 4982842197649876010, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
     - {fileID: 4016805582573421726, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
     - {fileID: 2067550640699417137, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
-    SpawnCount: 150
+    SpawnCount: 300
     SpawnRadius: 350
-  - Prefab: {fileID: 9216338701649631330, guid: 884ceeb66e2cc5b44bff1b822ae44a39, type: 3}
+    TerrainTypes: 020000000300000004000000
+  - Name: Puddle
+    Prefab: {fileID: 9216338701649631330, guid: 884ceeb66e2cc5b44bff1b822ae44a39, type: 3}
     GressSprites:
     - {fileID: -5160882468792293898, guid: 03a0abebec7b713449119b37ee9617f7, type: 3}
     - {fileID: -4504313136273846663, guid: 03a0abebec7b713449119b37ee9617f7, type: 3}
@@ -75,14 +129,17 @@ MonoBehaviour:
     - {fileID: 2574490404313573443, guid: 03a0abebec7b713449119b37ee9617f7, type: 3}
     SpawnCount: 0
     SpawnRadius: 350
-  - Prefab: {fileID: 6442709339354836656, guid: 55b5f436676a77d4caa4fdaa8ba21a7c, type: 3}
+    TerrainTypes: 
+  - Name: River
+    Prefab: {fileID: 9216338701649631330, guid: 884ceeb66e2cc5b44bff1b822ae44a39, type: 3}
     GressSprites:
-    - {fileID: 7207882119082248946, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
-    - {fileID: -7817259731008224619, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
-    - {fileID: 8459430566571322924, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
-    - {fileID: 1251309877831849473, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
-    SpawnCount: 150
+    - {fileID: 8061919959038570487, guid: e8026d2b588d4694d8f9a429ac7e58a6, type: 3}
+    - {fileID: -7820381653269175936, guid: e8026d2b588d4694d8f9a429ac7e58a6, type: 3}
+    - {fileID: 5362339452504853210, guid: e8026d2b588d4694d8f9a429ac7e58a6, type: 3}
+    - {fileID: 6217416108776383668, guid: e8026d2b588d4694d8f9a429ac7e58a6, type: 3}
+    SpawnCount: 1000
     SpawnRadius: 350
+    TerrainTypes: 05000000
   RainColor: {r: 0.39607844, g: 0.7176471, b: 0.5411765, a: 1}
   BaseColor: {r: 0.24705882, g: 0.8117647, b: 0.37254903, a: 1}
   Rain: {fileID: 1483312790664917706, guid: 87a4e5b28d8e90243a57e8adcd74f333, type: 3}

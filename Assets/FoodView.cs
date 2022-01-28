@@ -5,4 +5,5 @@ using UnityEngine;
 public class FoodView : MonoBehaviour
 {
     public int AddingPoints;
+    public Color Color;
 }
