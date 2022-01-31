@@ -49,6 +49,7 @@ namespace Client {
         {
             List<int[]> riversCoordinates = new List<int[]>();
             int left = int.MaxValue, right = int.MinValue, top = int.MinValue, buttom = int.MaxValue;
+            if (!terrainMap.ContainsKey(TerrainType.River)) { return; }
 
             foreach (var avaliableCoordinate in terrainMap[TerrainType.River])
             {

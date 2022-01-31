@@ -7,6 +7,8 @@ public class CharactersStaticData : ScriptableObject
 {
     public CharacterStaticData PlayerPelmen;
     public CharacterStaticData Pelmen;
+    public CharacterStaticData PelmenSmall;
     public CharacterStaticData Butterfly;
     public CharacterStaticData Rabbit;
+    public CharacterStaticData Frog;
 }

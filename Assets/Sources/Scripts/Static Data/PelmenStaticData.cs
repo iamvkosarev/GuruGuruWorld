@@ -53,5 +53,8 @@ public class PelmenStaticData : ScriptableObject
     public PelmenFaceData[] PelmenFaces;
     public PelmenFaceData PelmenAss;
     public PelmenHatData[] PelmenHats;
+    public PelmenFaceData[] PelmenSmallFaces;
+    public PelmenFaceData PelmenSmallAss;
+    public PelmenHatData[] PelmenSmallHats;
     public Color[] colors;
 }

@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerPelmen: {fileID: 11400000, guid: dca319655333add42b17f9a487fdbf2a, type: 2}
   Pelmen: {fileID: 11400000, guid: 0b9a0a180d27d1143a865a432cff2140, type: 2}
+  PelmenSmall: {fileID: 11400000, guid: 3d96ba3fd5efb5d4ea18521cfe45c776, type: 2}
   Butterfly: {fileID: 11400000, guid: 30e3308d384dca1448c86419fd2f255d, type: 2}
   Rabbit: {fileID: 11400000, guid: 1967913c093b6434b908f7118f313170, type: 2}
+  Frog: {fileID: 11400000, guid: a4cd12382dbbff04a8699036fd5e7d8a, type: 2}

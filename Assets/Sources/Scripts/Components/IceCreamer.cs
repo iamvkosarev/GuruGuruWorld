@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Client {
-    struct EaterComponent
+    [Serializable]
+    public struct IceCreamDispenserComponent
     {
         public Transform EaterTransform;
         public Transform RotatingPart;

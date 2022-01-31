@@ -44,7 +44,7 @@ MonoBehaviour:
     - {fileID: 6312686370498127844, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
     - {fileID: 714449725043378039, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
     - {fileID: 1555150878173212449, guid: c04a204a648e3414aa9543b60cc6f9a7, type: 3}
-    SpawnCount: 1200
+    SpawnCount: 500
     SpawnRadius: 350
     TerrainTypes: 02000000030000000000000001000000
   - Name: Food Apple
@@ -62,7 +62,7 @@ MonoBehaviour:
     - {fileID: -2151938821476498424, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
     - {fileID: 4450588348491703316, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
     - {fileID: 4273919566140803086, guid: d9899f7f4fa4f834ba3db3ba373b7c5d, type: 3}
-    SpawnCount: 150
+    SpawnCount: 100
     SpawnRadius: 350
     TerrainTypes: 0200000003000000
   - Name: Flowers
@@ -117,7 +117,7 @@ MonoBehaviour:
     - {fileID: 4982842197649876010, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
     - {fileID: 4016805582573421726, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
     - {fileID: 2067550640699417137, guid: e3355a0d99872574aaa93d39c39e19e8, type: 3}
-    SpawnCount: 300
+    SpawnCount: 200
     SpawnRadius: 350
     TerrainTypes: 020000000300000004000000
   - Name: Puddle

@@ -42,7 +42,7 @@ namespace Client {
                             com.Slider.value = com.EatenPoints;
                             com.EatingVFX.startColor = food.Color;
                             com.EatingVFX.Play();
-                            world.AddEaterCom(ClipType.PickUpFood);
+                            world.SpawnSoundCom(ClipType.PickUpFood);
                             collider.enabled = false;
                             food.gameObject.SetActive(false);
                         }

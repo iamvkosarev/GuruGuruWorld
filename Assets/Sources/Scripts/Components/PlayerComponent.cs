@@ -1,6 +1,8 @@
+using System;
 using UnityEngine;
 
 namespace Client {
-    struct PlayerComponent {
+    [Serializable]
+    public struct PlayerComponent {
     }
 }

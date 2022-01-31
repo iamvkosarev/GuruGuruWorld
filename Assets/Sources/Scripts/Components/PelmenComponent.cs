@@ -1,10 +1,12 @@
+using System;
 using UnityEngine;
 
 namespace Client {
-    struct PelmenComponent {
+    [Serializable]
+    public struct PelmenComponent {
         public SpriteRenderer Face;
         public PelmenFaceType FaceType;
         public PelmenFaceType BaseFaceType;
-        public int ID;
+        public bool IsSmall;
     }
 }

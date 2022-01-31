@@ -163,6 +163,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7517166083111910504}
   - component: {fileID: 8169760251888694298}
+  - component: {fileID: -8588663675932429572}
+  - component: {fileID: 8836887941890562830}
+  - component: {fileID: 3024014289751282874}
   m_Layer: 0
   m_Name: Butterfly
   m_TagString: Untagged
@@ -202,3 +205,58 @@ MonoBehaviour:
   - {fileID: 7517166083111910504}
   RotatingParts:
   - {fileID: 5500607559599237757}
+--- !u!114 &-8588663675932429572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517166083111910509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 863c7f7460b2b49abb4fa9a7ff9cb180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  convertMode: 0
+--- !u!114 &8836887941890562830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517166083111910509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55dd396836e43ef4886f0cc853ca117b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Transform: {fileID: 7517166083111910504}
+    MovingParts:
+    - {fileID: 7517166083111910504}
+    RotatingParts:
+    - {fileID: 5500607559599237757}
+    Direction: {x: 0, y: 0, z: 0}
+    JumpDirection: {x: 0, y: 0, z: 0}
+    Animator: {fileID: 5500607559599237759}
+    WantJump: 0
+    IsLookingLeft: 0
+    JumpSpandedTime: 0
+    JumpPauseSpandedTime: 0
+    Speed: 0
+    IncreasingSpeedValue: 1
+    MovingStaticData: {fileID: 11400000, guid: 306a103c6bb033d46a40d49d1a6f4437, type: 2}
+--- !u!114 &3024014289751282874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517166083111910509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c074e3774d238db4ba2c26eeed74e19c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    TargetPos: {x: 0, y: 0, z: 0}

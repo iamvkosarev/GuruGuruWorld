@@ -6,5 +6,8 @@ using Voody.UniLeo;
 
 public sealed class MovingComponentProvider : MonoProvider<MovingComponent>
 {
-    
+    private void Awake()
+    {
+        //value.JumpSpandedTime = UnityEngine.Random.Range(0.4f, 1f);
+    }
 }

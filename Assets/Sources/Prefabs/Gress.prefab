@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value:
-    Offset: 0
+    Offset: 4
     RunOnlyOnce: 1
     Renderer: {fileID: 9216338701649631331}
     Transform: {fileID: 9216338701649631328}

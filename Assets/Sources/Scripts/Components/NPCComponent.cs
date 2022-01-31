@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Client {
-    struct NPCComponent {
+    [Serializable]
+    public struct NPCComponent {
         public Vector3 TargetPos;
     }
 }

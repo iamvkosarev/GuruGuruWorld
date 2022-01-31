@@ -7,7 +7,7 @@ namespace Client {
         // auto-injected fields.
         readonly EcsWorld world = null;
         readonly GameStaticData staticData = null;
-        readonly EcsFilter<EaterComponent> eaterFilter = null;
+        readonly EcsFilter<IceCreamDispenserComponent> eaterFilter = null;
         readonly EcsFilter<IceCreamComponent> iceCreamFilter = null;
 
         private List<IceCreamView> pool = new List<IceCreamView>();

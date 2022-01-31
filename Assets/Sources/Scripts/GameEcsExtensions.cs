@@ -25,13 +25,7 @@ public static class GameEcsExtensions
         iceCreamCom.LifeTime = lifeTime;
         iceCreamCom.IceCreamView = iceCreamView;
     }
-    public static void AddEaterCom(this EcsWorld world, EcsEntity entity,  Transform eaterTransform, Transform rotatingTransform)
-    {
-        ref var eaterCom = ref entity.Get<EaterComponent>();
-        eaterCom.EaterTransform = eaterTransform;
-        eaterCom.RotatingPart = rotatingTransform;
-    }
-    public static void AddEaterCom(this EcsWorld world,  ClipType clipType)
+    public static void SpawnSoundCom(this EcsWorld world,  ClipType clipType)
     {
         var entity = world.NewEntity();
         ref var com = ref entity.Get<PlayClipComponent>();
@@ -46,21 +40,6 @@ public static class GameEcsExtensions
         targetedFaceCom.ReactionType = pelmenFaceType;
         targetedFaceCom.WorkingDistance = workingDistance;
         targetedFaceCom.RotatingPart = rotatingPart;
-    }
-
-    public static void AddPelmenCom(this EcsWorld world, EcsEntity entity, PelmenView pelmenView, bool chooseHat = false, PelmenHatType pelmenHatType = PelmenHatType.Random, bool setColor = false, PelmenFaceType baseFaceType = PelmenFaceType.Base)
-    {
-        ref var pelmenCom = ref entity.Get<PelmenComponent>();
-        GameEcsStartup.SelectHat(ref pelmenView, chooseHat, pelmenHatType);
-        if (setColor)
-        {
-            Color skinColor = GameEcsStartup.GetPelmenRandomSkinColor();
-            pelmenView.BodySpriteRenderer.color = skinColor;
-            pelmenView.FaceSpriteRenderer.color = skinColor;
-        }
-        pelmenCom.ID = GameEcsStartup.GetPelmenID();
-        pelmenCom.Face = pelmenView.FaceSpriteRenderer;
-        pelmenCom.BaseFaceType = baseFaceType;
     }
 
     

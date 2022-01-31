@@ -27,52 +27,7 @@ namespace Client {
             _shareData.PelemnCount++;
             return result;
         }
-        public static void SelectHat(ref PelmenView pelmenView, bool chooseHat, PelmenHatType pelmenHatType)
-        {
-            PelmenHatData hatData = _staticData.PelmenStaticData.PelmenHats[0];
-            if (chooseHat)
-            {
-                if(pelmenHatType == PelmenHatType.Random)
-                {
-                    int indexHat = UnityEngine.Random.Range(0, _staticData.PelmenStaticData.PelmenHats.Length);
-                    hatData = _staticData.PelmenStaticData.PelmenHats[indexHat];
-                }
-                else
-                {
-                    foreach (var pelmenHat in _staticData.PelmenStaticData.PelmenHats)
-                    {
-                        if (pelmenHat.PelmenHatType == pelmenHatType)
-                        {
-                            hatData = pelmenHat;
-                            break;
-                        }
-                    }
-                }
-            }
-            else
-            {
-                foreach (var pelmenHat in _staticData.PelmenStaticData.PelmenHats)
-                {
-                    if (pelmenHat.PelmenHatType == PelmenHatType.Base)
-                    {
-                        hatData = pelmenHat;
-                        break;
-                    }
-                }
-
-            }
-            if (hatData.PelmenHatType == PelmenHatType.Base)
-            {
-                pelmenView.HatSpriteRenderer.enabled = false;
-            }
-            else
-            {
-                pelmenView.HatSpriteRenderer.enabled = true;
-                pelmenView.HatSpriteRenderer.sprite = hatData.Sprite;
-                pelmenView.HatSpriteRenderer.transform.localPosition = hatData.HatLocalPos;
-
-            }
-        }
+        
         #endregion
         void Start () {
             world = new EcsWorld();
@@ -93,14 +48,19 @@ namespace Client {
             _staticData = staticData;
             _shareData = shareData;
             updateSystem
-                .ConvertScene()
                 .Add(new SpawnEnvironmentSystem())
                 .Add(new SpawnPlayerSystem())
                 .Add(new SpawnNPCSystem())
-                .Add(new SpawnCreaturesySystem())
+                .ConvertScene()
                 .Add(new IceCreamSystem())
+                .Add(new ShowHelpImageSystem())
+                .Add(new SetCameraSystem())
                 .Add(new NPCInputSystem())
+                .Add(new SetHatSystem())
                 .Add(new PlayerInputSystem())
+                .Add(new TransportUserSystem())
+                .Add(new SkateSystem())
+                .Add(new SetColorSystem())
                 //.Add(new RainSystem())
                 .Add(new HungrySystem())
                 .Add(new PelmenFaceSystem())

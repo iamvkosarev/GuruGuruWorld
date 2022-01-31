@@ -14,7 +14,7 @@ namespace Client {
             var characterStaticData = staticData.CharactersStaticData.PlayerPelmen;
             var characterView = characterStaticData.Prefab.Instantiate(null);
 
-            var newEntity = world.NewEntity();
+           /* var newEntity = world.NewEntity();
             ref var moverCom = ref newEntity.Get<MovingComponent>();
             ref var playerCom = ref newEntity.Get<PlayerComponent>();
 
@@ -27,14 +27,9 @@ namespace Client {
             moverCom.RotatingParts = characterView.RotatingParts;
 
             var pelmenView = characterView.GetComponent<PelmenView>();
-            moverCom.RotatingParts = characterView.RotatingParts;
-
-            world.AddPelmenCom(newEntity, pelmenView, true, PelmenHatType.Random,false, PelmenFaceType.CatSmile);
-            world.AddEaterCom(newEntity, moverCom.MovingParts[0], moverCom.RotatingParts[0]);
+            moverCom.RotatingParts = characterView.RotatingParts;*/
 
 
-            ref var eaterCom = ref newEntity.Get<EaterComponent>();
-            eaterCom.IceCreamTime = UnityEngine.Random.Range(4f, 8f);
         }
     }
 }
