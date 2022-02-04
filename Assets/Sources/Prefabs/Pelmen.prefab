@@ -343,6 +343,7 @@ GameObject:
   - component: {fileID: 8649044856609131619}
   - component: {fileID: 6320476933966762067}
   - component: {fileID: 667640437357092555}
+  - component: {fileID: 234729231330724575}
   m_Layer: 6
   m_Name: Pelmen
   m_TagString: Untagged
@@ -541,6 +542,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value:
     TargetPos: {x: 0, y: 0, z: 0}
+--- !u!114 &234729231330724575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611063078389584603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f057cdbff3f15c241ac90ab34db2e2fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Target: {fileID: 0}
+    Object: {fileID: 1812642966493404496}
+    RotatingPart: {fileID: 1716631361685180524}
+    ReactionType: 0
+    UseRandomFace: 1
+    WorkingDistance: 20
 --- !u!1 &6530498059082111733
 GameObject:
   m_ObjectHideFlags: 0

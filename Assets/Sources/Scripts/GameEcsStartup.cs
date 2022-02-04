@@ -60,8 +60,10 @@ namespace Client {
                 .Add(new PlayerInputSystem())
                 .Add(new TransportUserSystem())
                 .Add(new SkateSystem())
+                .Add(new TextSystem())
+                .Add(new DialogSystem())
                 .Add(new SetColorSystem())
-                //.Add(new RainSystem())
+                .Add(new RainSystem())
                 .Add(new HungrySystem())
                 .Add(new PelmenFaceSystem())
                 .Add(new AudioSystem())
@@ -70,7 +72,6 @@ namespace Client {
             fixedUpdateSystem
                 .Add(new MovingSystem());
             lateUpdateSystem
-                .ConvertScene()
                 .Add(new PositionRendererSorterSystem())
                 .Add(new RotatingSystem());
 

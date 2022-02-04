@@ -6,8 +6,16 @@ namespace Client {
         // auto-injected fields.
         readonly EcsWorld world = null;
         readonly EcsFilter<MovingComponent> movingFilter;
+        readonly EcsFilter<PlayerComponent, MovingComponent> playerFilter;
 
         void IEcsRunSystem.Run () {
+
+            MovingComponent playerMoverCom = new MovingComponent();
+            foreach (var i in playerFilter)
+            {
+                playerMoverCom = playerFilter.Get2(i);
+            }
+
             foreach (var i in movingFilter)
             {
                 ref var moverCom = ref movingFilter.Get1(i);
@@ -33,15 +41,19 @@ namespace Client {
                             {
                                 moverCom.Speed = 0.001f;
                             }
-                            if(wantJump != moverCom.WantJump)
+                            if (wantJump != moverCom.WantJump)
                             {
                                 moverCom.Animator.SetTrigger("Jump");
+                                if (moverCom.Transform == playerMoverCom.Transform)
+                                {
+                                    world.SpawnSoundCom(ClipType.PelmenStartJump);
+                                }
 
                             }
                             if (moverCom.JumpSpandedTime < moverCom.MovingStaticData.JumpTime)
                             {
 
-                                if(moverCom.JumpSpandedTime > moverCom.MovingStaticData.SetSpeedTime && moverCom.JumpSpandedTime < moverCom.MovingStaticData.LoseSpeedTime)
+                                if (moverCom.JumpSpandedTime > moverCom.MovingStaticData.SetSpeedTime && moverCom.JumpSpandedTime < moverCom.MovingStaticData.LoseSpeedTime)
                                 {
                                     moverCom.Speed = moverCom.MovingStaticData.Speed * moverCom.IncreasingSpeedValue + 0.001f;
                                     foreach (var movingPart in moverCom.MovingParts)
@@ -54,10 +66,18 @@ namespace Client {
                                 }
                                 else if (moverCom.JumpSpandedTime >= moverCom.MovingStaticData.LoseSpeedTime)
                                 {
-                                    moverCom.Speed = 0.001f;
+                                    if (moverCom.Speed > 0.001f)
+                                    {
+
+                                        moverCom.Speed = 0.001f;
+                                        if (moverCom.Transform == playerMoverCom.Transform)
+                                        {
+                                            world.SpawnSoundCom(ClipType.PelmenLandJump);
+                                        }
+                                    }
 
                                 }
-                                
+
                                 moverCom.JumpSpandedTime += Time.deltaTime;
                             }
                             else
@@ -66,7 +86,7 @@ namespace Client {
                                 moverCom.WantJump = false;
                                 moverCom.JumpPauseSpandedTime = UnityEngine.Random.Range(moverCom.MovingStaticData.JumpPauseTime.x,
                                     moverCom.MovingStaticData.JumpPauseTime.y);
-                                moverCom.JumpSpandedTime =0f;
+                                moverCom.JumpSpandedTime = 0f;
                                 moverCom.Animator.SetTrigger("Idle");
                             }
                         }
@@ -80,6 +100,7 @@ namespace Client {
 
                 moverCom.Transform.position += moverCom.Direction.normalized * moverCom.Speed * Time.fixedDeltaTime;
             }
+
         }
     }
 }

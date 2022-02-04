@@ -17,7 +17,8 @@ public enum PelmenFaceType
     Talking_2,
     Disappointed,
     Condemning_2,
-    Dio
+    Dio,
+    Moustache
 }
 public enum PelmenHatType
 {
@@ -29,7 +30,8 @@ public enum PelmenHatType
     Arrow,
     Random,
     VanGogh,
-    Dio
+    Dio,
+    Brown_Hair_1
 }
 [Serializable]
 public class PelmenFaceData

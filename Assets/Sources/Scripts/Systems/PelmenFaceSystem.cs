@@ -31,19 +31,27 @@ namespace Client {
                 ref var pelmenCom = ref pelmenFilter.Get1(i);
 
                 pelmenCom.FaceType = pelmenCom.BaseFaceType;
-            }
-            if(pelmenFilter.GetEntitiesCount() > 1)
-            {
 
-                foreach (var i in pelmenFilter)
+                if (pelmenCom.IsSmall)
                 {
-                    ref var moverCom = ref pelmenFilter.Get2(i);
-                    ref var pelmenCom = ref pelmenFilter.Get1(i);
-                    if (pelmenCom.IsSmall) { continue; }
-                    world.AddTargetedFace(pelmenFilter.GetEntity(i), moverCom.Transform, GetRandomPelmen(i), GetRandomFace(), 20f, moverCom.RotatingParts[0]);
-                    world.AddTargetedFace(pelmenFilter.GetEntity(i), moverCom.Transform, GetRandomPelmen(i), GetRandomFace(), 20f, moverCom.RotatingParts[0]);
+                    if (pelmenCom.Face.sprite != pelmenSmallFaceDictionary[pelmenCom.FaceType].Sprite)
+                    {
+                        pelmenCom.Face.sprite = pelmenSmallFaceDictionary[pelmenCom.FaceType].Sprite;
+                        pelmenCom.Face.transform.localPosition = pelmenSmallFaceDictionary[pelmenCom.FaceType].FaceLocalPos;
+                    }
+
+                }
+                else
+                {
+
+                    if (pelmenCom.Face.sprite != pelmenFaceDictionary[pelmenCom.FaceType].Sprite)
+                    {
+                        pelmenCom.Face.sprite = pelmenFaceDictionary[pelmenCom.FaceType].Sprite;
+                        pelmenCom.Face.transform.localPosition = pelmenFaceDictionary[pelmenCom.FaceType].FaceLocalPos;
+                    }
                 }
             }
+            
         }
 
         private PelmenFaceType GetRandomFace()
@@ -63,11 +71,11 @@ namespace Client {
 
         private Transform GetRandomPelmen(int except)
         {
-            int index = UnityEngine.Random.Range(0, pelmenFilter.GetEntitiesCount());
+            int index = UnityEngine.Random.Range(0, targetedFaceFilter.GetEntitiesCount());
             if(index == except)
             {
                 index += 1;
-                index %= pelmenFilter.GetEntitiesCount();
+                index %= targetedFaceFilter.GetEntitiesCount();
             }
             return pelmenFilter.Get2(index).Transform;
         }
@@ -78,42 +86,46 @@ namespace Client {
                 ref var pelmenCom = ref pelmenFilter.Get1(i);
                 ref var moverCom = ref pelmenFilter.Get2(i);
 
-                if(moverCom.Direction.y > 0f)
+                if (Mathf.Abs(moverCom.Direction.y) > 0.2f)
                 {
-                    if (pelmenCom.IsSmall)
+                    if (moverCom.Direction.y > 0f)
                     {
-                        pelmenCom.Face.sprite = pelmenSmallAss.Sprite;
-                        pelmenCom.Face.transform.localPosition = pelmenSmallAss.FaceLocalPos;
+                        if (pelmenCom.IsSmall)
+                        {
+                            pelmenCom.Face.sprite = pelmenSmallAss.Sprite;
+                            pelmenCom.Face.transform.localPosition = pelmenSmallAss.FaceLocalPos;
 
+                        }
+                        else
+                        {
+
+                            pelmenCom.Face.sprite = pelmenAss.Sprite;
+                            pelmenCom.Face.transform.localPosition = pelmenAss.FaceLocalPos;
+                        }
                     }
                     else
                     {
-
-                        pelmenCom.Face.sprite = pelmenAss.Sprite;
-                        pelmenCom.Face.transform.localPosition = pelmenAss.FaceLocalPos;
-                    }
-                }
-                else
-                {
-                    if (pelmenCom.IsSmall)
-                    {
-                        if (pelmenCom.Face.sprite != pelmenSmallFaceDictionary[pelmenCom.FaceType].Sprite)
+                        if (pelmenCom.IsSmall)
                         {
-                            pelmenCom.Face.sprite = pelmenSmallFaceDictionary[pelmenCom.FaceType].Sprite;
-                            pelmenCom.Face.transform.localPosition = pelmenSmallFaceDictionary[pelmenCom.FaceType].FaceLocalPos;
+                            if (pelmenCom.Face.sprite != pelmenSmallFaceDictionary[pelmenCom.FaceType].Sprite)
+                            {
+                                pelmenCom.Face.sprite = pelmenSmallFaceDictionary[pelmenCom.FaceType].Sprite;
+                                pelmenCom.Face.transform.localPosition = pelmenSmallFaceDictionary[pelmenCom.FaceType].FaceLocalPos;
+                            }
+
                         }
-
-                    }
-                    else
-                    {
-
-                        if (pelmenCom.Face.sprite != pelmenFaceDictionary[pelmenCom.FaceType].Sprite)
+                        else
                         {
-                            pelmenCom.Face.sprite = pelmenFaceDictionary[pelmenCom.FaceType].Sprite;
-                            pelmenCom.Face.transform.localPosition = pelmenFaceDictionary[pelmenCom.FaceType].FaceLocalPos;
+
+                            if (pelmenCom.Face.sprite != pelmenFaceDictionary[pelmenCom.FaceType].Sprite)
+                            {
+                                pelmenCom.Face.sprite = pelmenFaceDictionary[pelmenCom.FaceType].Sprite;
+                                pelmenCom.Face.transform.localPosition = pelmenFaceDictionary[pelmenCom.FaceType].FaceLocalPos;
+                            }
                         }
                     }
                 }
+                
             }
             foreach (var i in targetedFaceFilter)
             {
@@ -121,13 +133,21 @@ namespace Client {
                 ref var pelmenCom = ref targetedFaceFilter.Get1(i);
                 ref var targetedFaceCom = ref targetedFaceFilter.Get2(i);
 
-
+                if(targetedFaceCom.Target == null)
+                {
+                    targetedFaceCom.Target = GetRandomPelmen(i);
+                    if (targetedFaceCom.UseRandomFace)
+                    {
+                        targetedFaceCom.FaceType = GetRandomFace();
+                    }
+                }
+                
 
                 if(Vector3.Distance(targetedFaceCom.Object.position, targetedFaceCom.Target.position) <= targetedFaceCom.WorkingDistance && 
                     (targetedFaceCom.RotatingPart.localScale.x == -1 && targetedFaceCom.Object.position.x - targetedFaceCom.Target.position.x >= 0f ||
                     targetedFaceCom.RotatingPart.localScale.x == 1 && targetedFaceCom.Object.position.x - targetedFaceCom.Target.position.x <= 0f))
                 {
-                    pelmenCom.FaceType = targetedFaceCom.ReactionType;
+                    pelmenCom.FaceType = targetedFaceCom.FaceType;
                 }
                 else
                 {

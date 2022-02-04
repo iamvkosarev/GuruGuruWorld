@@ -13,4 +13,5 @@ public class GameStaticData : ScriptableObject
     public EnvironmentStaticData EnvironmentStaticData;
     public IceCreamStaticData IceCreamStaticData;
     public PositionRenserSorterStaticData PositionRenserSorterStaticData;
+    public DialogStaticData DialogStaticData;
 }

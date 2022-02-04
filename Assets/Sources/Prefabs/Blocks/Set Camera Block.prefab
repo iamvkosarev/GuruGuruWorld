@@ -59,3 +59,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value:
     Target: {fileID: 0}
+    Offset: {x: 0, y: 0.67, z: 0}

@@ -6,7 +6,10 @@ using UnityEngine;
 
 public enum ClipType
 {
-    PickUpFood
+    PickUpFood,
+    PelmenStartJump,
+    PelmenLandJump,
+    Guru
 }
 [Serializable]
 public class ClipData

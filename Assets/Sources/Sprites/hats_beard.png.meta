@@ -11,6 +11,9 @@ TextureImporter:
   - first:
       213: -4411120311650305859
     second: hats_beard_8
+  - first:
+      213: -8944711432003351086
+    second: hats_beard_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -300,7 +303,7 @@ TextureImporter:
         width: 22
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -308,6 +311,27 @@ TextureImporter:
       bones: []
       spriteID: db8b29a927d88c2c0800000000000000
       internalID: -4411120311650305859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hats_beard_9
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 39
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd801df7500ed380800000000000000
+      internalID: -8944711432003351086
       vertices: []
       indices: 
       edges: []

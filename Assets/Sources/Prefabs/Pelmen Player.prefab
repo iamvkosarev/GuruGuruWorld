@@ -55,9 +55,29 @@ PrefabInstance:
       propertyPath: value.MovingStaticData
       value: 
       objectReference: {fileID: 11400000, guid: 22c846efc44538645bdb7cd331809c6e, type: 2}
+    - target: {fileID: 3278495203308895284, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2419959666411369297, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     - target: {fileID: 4611063078389584603, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: m_Name
       value: Pelmen Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001927834218385049, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8944711432003351086, guid: 72fd22f6a6c2e9844a338de2d12e881a, type: 3}
+    - target: {fileID: 5873478050672959914, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6159608659137235220, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6159608659137235220, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.01
       objectReference: {fileID: 0}
     - target: {fileID: 6320476933966762067, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: value.EaterTransform
@@ -71,9 +91,13 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7356226565676359896, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8649044856609131619, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: value.FaceType
-      value: 2
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8871741530558100445, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: ChoosingColours.Array.size
@@ -81,10 +105,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9193331035404596815, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: value.PelmenHatType
-      value: 3
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 667640437357092555, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
+    - {fileID: 234729231330724575, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
 --- !u!1 &4311270903569592077 stripped
 GameObject:

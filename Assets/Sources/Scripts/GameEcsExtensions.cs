@@ -32,15 +32,6 @@ public static class GameEcsExtensions
         com.ClipType = clipType;
     }
 
-    public static void AddTargetedFace(this EcsWorld world, EcsEntity entity, Transform @object,Transform target, PelmenFaceType pelmenFaceType, float workingDistance, Transform rotatingPart)
-    {
-        ref var targetedFaceCom = ref entity.Get<TargetedFaceComponent>();
-        targetedFaceCom.Target = target;
-        targetedFaceCom.Object = @object;
-        targetedFaceCom.ReactionType = pelmenFaceType;
-        targetedFaceCom.WorkingDistance = workingDistance;
-        targetedFaceCom.RotatingPart = rotatingPart;
-    }
 
     
 }

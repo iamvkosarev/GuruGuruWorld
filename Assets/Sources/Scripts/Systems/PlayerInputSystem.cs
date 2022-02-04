@@ -5,9 +5,10 @@ namespace Client {
     sealed class PlayerInputSystem : IEcsRunSystem {
         // auto-injected fields.
         readonly EcsWorld world = null;
-        readonly EcsFilter<PlayerComponent, MovingComponent, TransportUserComponent> playerFilter;
+        readonly EcsFilter<PlayerComponent, MovingComponent> playerFilter;
         readonly EcsFilter<PlayerComponent, TransportUserComponent> playerUserTransportFilter;
 
+        private bool SwitchOffText;
 
         void IEcsRunSystem.Run () {
             foreach (var i in playerFilter)

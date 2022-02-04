@@ -1,4 +1,6 @@
+using Cinemachine;
 using Leopotam.Ecs;
+using UnityEngine;
 
 namespace Client {
     sealed class SetCameraSystem : IEcsRunSystem {
@@ -11,6 +13,8 @@ namespace Client {
             {
                 ref var com = ref filter.Get1(i);
                 sceneData.CinemachineVirtualCamera.Follow = com.Target;
+                var transposer = sceneData.CinemachineVirtualCamera.GetCinemachineComponent<CinemachineTransposer>();
+                transposer.m_FollowOffset = com.Offset + new Vector3(0,0,-1f);
                 filter.GetEntity(i).Destroy();
             }
         }

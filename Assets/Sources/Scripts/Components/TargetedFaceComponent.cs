@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 
 namespace Client {
-    struct TargetedFaceComponent {
+    [Serializable]
+    public struct TargetedFaceComponent {
         public Transform Target, Object, RotatingPart;
-        public PelmenFaceType ReactionType;
+        public PelmenFaceType FaceType;
+        public bool UseRandomFace;
         public float WorkingDistance;
     }
 }
