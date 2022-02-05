@@ -11,7 +11,7 @@ namespace Client {
 
         public void Init () {
 
-            var characterStaticData = staticData.CharactersStaticData.ButterflyPlayer;
+            var characterStaticData = staticData.CharactersStaticData.PlayerPelmen;
             var characterView = characterStaticData.Prefab.Instantiate(null);
 
            /* var newEntity = world.NewEntity();

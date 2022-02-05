@@ -15,7 +15,7 @@ namespace Client {
         public void Init () {
             parent = new GameObject("Environment").transform;
             sceneDataView.MapGenerator.Seed = UnityEngine.Random.Range(0,1000);
-            var terrainMap = sceneDataView.MapGenerator.GenerateMap(out int width, out int hight);
+            var terrainMap = sceneDataView.MapGenerator.TryGetMap(out int width, out int hight);
             foreach (var keyValuePair in terrainMap)
             {
                 var typeOfTerrain = keyValuePair.Key;
@@ -42,66 +42,35 @@ namespace Client {
 
             }
 
-            SpawnWater(terrainMap, width, hight);
+            SpawnWater(terrainMap, width, hight, 4f);
         }
 
-        private void SpawnWater(Dictionary<TerrainType, List<int[]>> terrainMap, int width, int hight)
+        private void SpawnWater(Dictionary<TerrainType, List<int[]>> terrainMap, int width, int hight, float scale = 1f)
         {
+            var old_width = width;
+            var old_hight = hight;
+            width = (int)((float)width * scale);
+            hight = (int)((float)hight * scale);
             List<int[]> riversCoordinates = new List<int[]>();
-            int left = int.MaxValue, right = int.MinValue, top = int.MinValue, buttom = int.MaxValue;
             if (!terrainMap.ContainsKey(TerrainType.River)) { return; }
 
             foreach (var avaliableCoordinate in terrainMap[TerrainType.River])
             {
                 riversCoordinates.Add(avaliableCoordinate);
-                var x = avaliableCoordinate[0];
-                var y = avaliableCoordinate[1];
-                if(x > right)
-                {
-                    right = x;
-                }
-                if(x < left)
-                {
-                    left = x;
-                }
-                if(y > top)
-                {
-                    top = y;
-                }
-                if(y < buttom)
-                {
-                    buttom = y;
-                }
             }
             foreach (var avaliableCoordinate in terrainMap[TerrainType.PreRiver])
             {
                 riversCoordinates.Add(avaliableCoordinate);
-                var x = avaliableCoordinate[0];
-                var y = avaliableCoordinate[1];
-                if (x > right)
-                {
-                    right = x;
-                }
-                if (x < left)
-                {
-                    left = x;
-                }
-                if (y > top)
-                {
-                    top = y;
-                }
-                if (y < buttom)
-                {
-                    buttom = y;
-                }
             }
 
             Texture2D tex = new Texture2D(width, hight);
+            int[,] matrix = new int[width, hight];
 
             for (int x = 0; x < tex.width; x++)
             {
                 for (int y = 0; y < tex.height; y++)
                 {
+                    matrix[x, y] = 0;
                     tex.SetPixel(x, y, Color.clear);
                 }
             }
@@ -109,10 +78,236 @@ namespace Client {
             foreach (var riversCoordinate in riversCoordinates)
             {
 
-                var x = riversCoordinate[0];
-                var y = riversCoordinate[1];
+                var x = riversCoordinate[0] + old_width /2;
+                var y = riversCoordinate[1] + old_hight / 2;
 
-                tex.SetPixel(x + width/2, y + hight / 2, Color.blue);
+                matrix[x, y] = 1;
+                x = (int)((float)x * scale);
+                y = (int)((float)y * scale);
+
+                for (int i = -2; i <= 2; i++)
+                {
+                    for (int j = -2; j <= 2; j++)
+                    {
+
+                        tex.SetPixel(x+i, y+j, Color.blue);
+                    }
+                }
+            }
+
+            foreach (var riversCoordinate in riversCoordinates)
+            {
+
+                var x = riversCoordinate[0] + old_width / 2;
+                var y = riversCoordinate[1] + old_hight / 2;
+
+                
+                try
+                {
+                    
+                        if (
+                  (matrix[x - 1, y + 1] == 0 && matrix[x, y + 1] == 1 && matrix[x + 1, y + 1] == 1
+                && matrix[x - 1, y + 0] == 1 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 1
+                && matrix[x - 1, y - 1] == 1 && matrix[x, y - 1] == 1 && matrix[x + 1, y - 1] == 1)
+                
+                || 
+                  (matrix[x - 1, y + 1] == 0 && matrix[x, y + 1] == 0 && matrix[x + 1, y + 1] == 1
+                && matrix[x - 1, y + 0] == 1 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 1
+                && matrix[x - 1, y - 1] == 1 && matrix[x, y - 1] == 1 && matrix[x + 1, y - 1] == 1)
+                ||
+                  (matrix[x - 1, y + 1] == 0 && matrix[x, y + 1] ==1 && matrix[x + 1, y + 1] == 1
+                && matrix[x - 1, y + 0] == 0 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 1
+                && matrix[x - 1, y - 1] == 1 && matrix[x, y - 1] == 1 && matrix[x + 1, y - 1] == 1)
+                )
+                    { 
+                        x = (int)((float)(x - 1 )* scale);
+                        y = (int)((float)(y + 1 )* scale);
+
+                        for (int i = -2; i <= 2; i++)
+                        {
+                            for (int j = -2; j <= 2; j++)
+                            {
+                                if ((i + j) % 2 != 0) { continue; }
+                                tex.SetPixel(x + i, y + j, Color.blue);
+                            }
+                        }
+                    }
+
+                    else if (
+                  (matrix[x - 1, y + 1] == 1 && matrix[x, y + 1] == 1 && matrix[x + 1, y + 1] == 0
+                && matrix[x - 1, y + 0] == 1 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 1
+                && matrix[x - 1, y - 1] == 1 && matrix[x, y - 1] == 1 && matrix[x + 1, y - 1] == 1)
+
+                ||
+                  (matrix[x - 1, y + 1] == 1 && matrix[x, y + 1] == 0 && matrix[x + 1, y + 1] == 0
+                && matrix[x - 1, y + 0] == 1 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 1
+                && matrix[x - 1, y - 1] == 1 && matrix[x, y - 1] == 1 && matrix[x + 1, y - 1] == 1)
+                ||
+                  (matrix[x - 1, y + 1] == 1 && matrix[x, y + 1] == 1 && matrix[x + 1, y + 1] == 0
+                && matrix[x - 1, y + 0] == 1 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 0
+                && matrix[x - 1, y - 1] == 1 && matrix[x, y - 1] == 1 && matrix[x + 1, y - 1] == 1)
+               )
+                    {
+                        x = (int)((float)(x + 1) * scale);
+                        y = (int)((float)(y + 1) * scale);
+
+                        for (int i = -2; i <= 2; i++)
+                        {
+                            for (int j = -2; j <= 2; j++)
+                            {
+                                if ((i + j) % 2 != 0) { continue; }
+                                tex.SetPixel(x + i, y + j, Color.blue);
+                            }
+                        }
+                    }
+
+                    else if (
+                  (matrix[x - 1, y + 1] == 1 && matrix[x, y + 1] == 1 && matrix[x + 1, y + 1] == 1
+                && matrix[x - 1, y + 0] == 1 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 1
+                && matrix[x - 1, y - 1] == 1 && matrix[x, y - 1] == 1 && matrix[x + 1, y - 1] == 0)
+
+                ||
+                  (matrix[x - 1, y + 1] == 1 && matrix[x, y + 1] == 1 && matrix[x + 1, y + 1] == 1
+                && matrix[x - 1, y + 0] == 1 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 0
+                && matrix[x - 1, y - 1] == 1 && matrix[x, y - 1] == 1 && matrix[x + 1, y - 1] == 0)
+                ||
+                  (matrix[x - 1, y + 1] == 1 && matrix[x, y + 1] == 1 && matrix[x + 1, y + 1] == 1
+                && matrix[x - 1, y + 0] == 1 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 1
+                && matrix[x - 1, y - 1] == 1 && matrix[x, y - 1] == 0 && matrix[x + 1, y - 1] == 0)
+               )
+                    {
+                        x = (int)((float)(x + 1) * scale);
+                        y = (int)((float)(y - 1) * scale);
+
+                        for (int i = -2; i <= 2; i++)
+                        {
+                            for (int j = -2; j <= 2; j++)
+                            {
+                                if ((i + j) % 2 != 0) { continue; }
+                                tex.SetPixel(x + i, y + j, Color.blue);
+                            }
+                        }
+                    }
+                    else if (
+                  (matrix[x - 1, y + 1] == 1 && matrix[x, y + 1] == 1 && matrix[x + 1, y + 1] == 1
+                && matrix[x - 1, y + 0] == 1 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 1
+                && matrix[x - 1, y - 1] == 0 && matrix[x, y - 1] == 1 && matrix[x + 1, y - 1] == 1)
+
+                ||
+                  (matrix[x - 1, y + 1] == 1 && matrix[x, y + 1] == 1 && matrix[x + 1, y + 1] == 1
+                && matrix[x - 1, y + 0] == 0 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 1
+                && matrix[x - 1, y - 1] == 0 && matrix[x, y - 1] == 1 && matrix[x + 1, y - 1] == 1)
+                ||
+                  (matrix[x - 1, y + 1] == 1 && matrix[x, y + 1] == 1 && matrix[x + 1, y + 1] == 1
+                && matrix[x - 1, y + 0] == 1 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 1
+                && matrix[x - 1, y - 1] == 0 && matrix[x, y - 1] == 0 && matrix[x + 1, y - 1] == 1)
+               )
+                    {
+                        x = (int)((float)(x - 1) * scale);
+                        y = (int)((float)(y - 1) * scale);
+
+                        for (int i = -2; i <= 2; i++)
+                        {
+                            for (int j = -2; j <= 2; j++)
+                            {
+                                if ((i + j) % 2 != 0) { continue; }
+                                tex.SetPixel(x + i, y + j, Color.blue);
+                            }
+                        }
+                    }
+                    else if (
+              (matrix[x - 1, y + 1] == 0 && matrix[x, y + 1] == 1 && matrix[x + 1, y + 1] == 1
+            && matrix[x - 1, y + 0] == 0 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 1
+            && matrix[x - 1, y - 1] == 0 && matrix[x, y - 1] == 1 && matrix[x + 1, y - 1] == 1)
+
+           )
+                    {
+                        for (int k = -1; k <= 1; k++)
+                        {
+                            var x_in = (int)((float)(x - 1) * scale);
+                            var y_in = (int)((float)(y + k) * scale);
+
+                            for (int i = -2; i <= 2; i++)
+                            {
+                                for (int j = -2; j <= 2; j++)
+                                {
+                                    if ((i + j) % 2 != 0) { continue; }
+                                    tex.SetPixel(x_in + i, y_in + j, Color.blue);
+                                }
+                            }
+                        }
+                    }
+                    else if (
+              (matrix[x - 1, y + 1] == 0 && matrix[x, y + 1] == 0 && matrix[x + 1, y + 1] == 0
+            && matrix[x - 1, y + 0] == 1 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 1
+            && matrix[x - 1, y - 1] == 1 && matrix[x, y - 1] == 1 && matrix[x + 1, y - 1] == 1)
+
+           )
+                    {
+                        for (int k = -1; k <= 1; k++)
+                        {
+                            var x_in = (int)((float)(x + k) * scale);
+                            var y_in = (int)((float)(y + 1) * scale);
+
+                            for (int i = -2; i <= 2; i++)
+                            {
+                                for (int j = -2; j <= 2; j++)
+                                {
+                                    if ((i + j) % 2 != 0) { continue; }
+                                    tex.SetPixel(x_in + i, y_in + j, Color.blue);
+                                }
+                            }
+                        }
+                    }
+                    else if (
+          (matrix[x - 1, y + 1] == 1 && matrix[x, y + 1] == 1 && matrix[x + 1, y + 1] == 0
+        && matrix[x - 1, y + 0] == 1 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 0
+        && matrix[x - 1, y - 1] == 1 && matrix[x, y - 1] == 1 && matrix[x + 1, y - 1] == 0)
+
+       )
+                    {
+                        for (int k = -1; k <= 1; k++)
+                        {
+                            var x_in = (int)((float)(x + 1) * scale);
+                            var y_in = (int)((float)(y + k) * scale);
+
+                            for (int i = -2; i <= 2; i++)
+                            {
+                                for (int j = -2; j <= 2; j++)
+                                {
+                                    if ((i + j) % 2 != 0) { continue; }
+                                    tex.SetPixel(x_in + i, y_in + j, Color.blue);
+                                }
+                            }
+                        }
+                    }
+                    else if (
+      (matrix[x - 1, y + 1] == 1 && matrix[x, y + 1] == 1 && matrix[x + 1, y + 1] == 1
+    && matrix[x - 1, y + 0] == 1 && matrix[x, y + 0] == 1 && matrix[x + 1, y + 0] == 1
+    && matrix[x - 1, y - 1] == 0 && matrix[x, y - 1] == 0 && matrix[x + 1, y - 1] == 0)
+
+   )
+                    {
+                        for (int k = -1; k <= 1; k++)
+                        {
+                            var x_in = (int)((float)(x + k) * scale);
+                            var y_in = (int)((float)(y - 1) * scale);
+
+                            for (int i = -2; i <= 2; i++)
+                            {
+                                for (int j = -2; j <= 2; j++)
+                                {
+                                    if ((i + j) % 2 != 0) { continue; }
+                                    tex.SetPixel(x_in + i, y_in + j, Color.blue);
+                                }
+                            }
+                        }
+
+                    }
+                }
+                catch(Exception e){
+
+                }
             }
             tex.Apply();
 
@@ -123,6 +318,8 @@ namespace Client {
             var spriteRenderer = riversGO.AddComponent<SpriteRenderer>();
             var sprite = Sprite.Create(tex, new Rect(0f, 0f, tex.width, tex.height), new Vector2(0.5f,0.5f), 0.5f);
             spriteRenderer.sprite = sprite;
+            riversGO.AddComponent<PolygonCollider2D>();
+            riversGO.transform.localScale /= scale;
 
         }
 

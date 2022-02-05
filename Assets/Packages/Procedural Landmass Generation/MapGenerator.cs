@@ -46,12 +46,25 @@ public class MapGenerator : MonoBehaviour {
 			display.DrawTexture (TextureGenerator.TextureFromColourMap(colourMap, mapWidth, mapHeight));
 		}
 	}
+	Dictionary<TerrainType, List<int[]>> generatedMap = new Dictionary<TerrainType, List<int[]>>();
+	int width, hight;
 
-	public Dictionary<TerrainType, List<int[]>> GenerateMap(out int width, out int hight)
+	public Dictionary<TerrainType, List<int[]>> TryGetMap(out int width, out int hight)
+    {
+		if(generatedMap.Count == 0)
+        {
+			GenerateMap();
+		}
+		width = this.width;
+		hight = this.hight;
+		return generatedMap;
+
+	}
+	private Dictionary<TerrainType, List<int[]>> GenerateMap()
 	{
 		float[,] noiseMap = Noise.GenerateNoiseMap(mapWidth, mapHeight, Seed, noiseScale, octaves, persistance, lacunarity, offset);
 
-		Dictionary<TerrainType, List<int[]>> result = new Dictionary<TerrainType, List<int[]>>();
+		
 		Dictionary<Color, TerrainType> colorDictionary = new Dictionary<Color, TerrainType>();
         foreach (var region in regions)
         {
@@ -71,21 +84,21 @@ public class MapGenerator : MonoBehaviour {
 						break;
 					}
 				}
-				if(!result.ContainsKey(colorDictionary[colourMap[y * mapWidth + x]]))
+				if(!generatedMap.ContainsKey(colorDictionary[colourMap[y * mapWidth + x]]))
                 {
 
-					result.Add(colorDictionary[colourMap[y * mapWidth + x]], new List<int[]>() { new int[2] { x - mapWidth/2, y- mapHeight /2} });
+					generatedMap.Add(colorDictionary[colourMap[y * mapWidth + x]], new List<int[]>() { new int[2] { x - mapWidth/2, y- mapHeight /2} });
 				}
                 else
                 {
 
-					result[colorDictionary[colourMap[y * mapWidth + x]]].Add(new int[2] { x- mapWidth/2, y - mapHeight / 2 } );
+					generatedMap[colorDictionary[colourMap[y * mapWidth + x]]].Add(new int[2] { x- mapWidth/2, y - mapHeight / 2 } );
 				}
 			}
 		}
-		width = mapWidth;
-		hight = mapHeight;
-		return result;
+		this.width = mapWidth;
+		this.hight = mapHeight;
+		return generatedMap;
 	}
 
 

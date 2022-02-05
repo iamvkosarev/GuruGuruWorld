@@ -63,7 +63,7 @@ namespace Client {
                 .Add(new TextSystem())
                 .Add(new DialogSystem())
                 .Add(new SetColorSystem())
-                .Add(new RainSystem())
+                //.Add(new RainSystem())
                 .Add(new HungrySystem())
                 .Add(new PelmenFaceSystem())
                 .Add(new AudioSystem())
