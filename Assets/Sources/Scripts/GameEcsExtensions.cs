@@ -31,6 +31,17 @@ public static class GameEcsExtensions
         ref var com = ref entity.Get<PlayClipComponent>();
         com.ClipType = clipType;
     }
+    
+    public static void SpawnTextMassageCom(this EcsWorld world,  string text, Color color, Vector3 startPos, Vector3 moveLocalPos, float moveTime = 3f)
+    {
+        var entity = world.NewEntity();
+        ref var com = ref entity.Get<SpawnTextMassageComponent>();
+        com.Text = text;
+        com.Color= color;
+        com.StartPos= startPos;
+        com.MoveLocalPos= moveLocalPos;
+        com.MoveTime= moveTime;
+    }
 
 
     

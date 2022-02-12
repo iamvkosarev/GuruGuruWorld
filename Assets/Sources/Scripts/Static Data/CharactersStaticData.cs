@@ -5,11 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "MyProject/Game/CharactersStaticData")]
 public class CharactersStaticData : ScriptableObject
 {
-    public CharacterStaticData PlayerPelmen;
-    public CharacterStaticData Pelmen;
-    public CharacterStaticData PelmenSmall;
-    public CharacterStaticData ButterflyPlayer;
-    public CharacterStaticData Butterfly;
-    public CharacterStaticData Rabbit;
-    public CharacterStaticData Frog;
+    public GameObject PlayerPelmen;
+    public GameObject Pelmen;
+    public GameObject PelmenSmall;
+    public GameObject ButterflyPlayer;
+    public GameObject Butterfly;
+    public GameObject Rabbit;
+    public GameObject Frog;
+    public GameObject Slime;
 }

@@ -9,7 +9,9 @@ public struct MovingComponent
     public Transform[] RotatingParts;
     public Vector3 Direction, JumpDirection;
     public Animator Animator;
-    public bool WantJump, IsLookingLeft;
-    public float JumpSpandedTime, JumpPauseSpandedTime, Speed, IncreasingSpeedValue;
+    public bool IsLookingLeft;
+    [NonSerialized] public bool WantJump;
+    [NonSerialized] public float JumpSpandedTime, JumpPauseSpandedTime, Speed;
+    [NonSerialized] public float IncreasingSpeedValue;
     public MovingStaticData MovingStaticData;
 }

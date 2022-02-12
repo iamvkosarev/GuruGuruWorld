@@ -1,104 +1,105 @@
 using Leopotam.Ecs;
 using System.Collections.Generic;
 using UnityEngine;
+using Client;
 
-namespace Client {
-    sealed class IceCreamSystem : IEcsRunSystem, IEcsInitSystem {
-        // auto-injected fields.
-        readonly EcsWorld world = null;
-        readonly GameStaticData staticData = null;
-        readonly EcsFilter<IceCreamDispenserComponent> eaterFilter = null;
-        readonly EcsFilter<IceCreamComponent> iceCreamFilter = null;
+sealed class IceCreamSystem : IEcsRunSystem, IEcsInitSystem
+{
+    // auto-injected fields.
+    readonly EcsWorld world = null;
+    readonly GameStaticData staticData = null;
+    readonly EcsFilter<IceCreamDispenserComponent> eaterFilter = null;
+    readonly EcsFilter<IceCreamComponent> iceCreamFilter = null;
 
-        private List<IceCreamView> pool = new List<IceCreamView>();
+    private List<IceCreamView> pool = new List<IceCreamView>();
 
-        void IEcsInitSystem.Init()
+    void IEcsInitSystem.Init()
+    {
+        var parent = new GameObject("Ice Cream").transform;
+        for (int i = 0; i < staticData.IceCreamStaticData.PoolSize; i++)
         {
-            var parent = new GameObject("Ice Cream").transform;
-            for (int i = 0; i < staticData.IceCreamStaticData.PoolSize; i++)
+            var newIceCream = staticData.IceCreamStaticData.IceCreamPrefab.Instantiate(parent).transform;
+            newIceCream.gameObject.SetActive(false);
+            pool.Add(newIceCream.GetComponent<IceCreamView>());
+        }
+    }
+    void IEcsRunSystem.Run()
+    {
+        foreach (var i in eaterFilter)
+        {
+            ref var eaterCom = ref eaterFilter.Get1(i);
+            if (eaterCom.IceCreamTime > 0f)
             {
-                var newIceCream = staticData.IceCreamStaticData.IceCreamPrefab.Instantiate(parent).transform;
-                newIceCream.gameObject.SetActive(false);
-                pool.Add(newIceCream.GetComponent<IceCreamView>());
+                eaterCom.IceCreamTime -= Time.deltaTime;
+
+            }
+            else
+            {
+                if (eaterCom.EaterTransform.localPosition.y > 0.2f)
+                {
+
+                    if (ChooseIceCream(out IceCreamView selectedIceView))
+                    {
+                        world.SpawnIceCream(eaterCom.EaterTransform.position, selectedIceView, eaterCom.RotatingPart.localScale, eaterCom.EaterTransform.localPosition.y);
+                        selectedIceView.Animator.SetTrigger("Fall");
+                        eaterCom.IceCreamTime = UnityEngine.Random.Range(4f, 8f);
+                    }
+                }
             }
         }
-        void IEcsRunSystem.Run () {
-            foreach (var i in eaterFilter)
-            {
-                ref var eaterCom = ref eaterFilter.Get1(i);
-                if(eaterCom.IceCreamTime > 0f)
-                {
-                    eaterCom.IceCreamTime -= Time.deltaTime;
 
+        foreach (var i in iceCreamFilter)
+        {
+            ref var iceCreamCom = ref iceCreamFilter.Get1(i);
+            if (iceCreamCom.FallingHight > -0.295f)
+            {
+                float moveDistamce = staticData.IceCreamStaticData.FallingSpeed * Time.deltaTime;
+                iceCreamCom.IceCreamView.transform.position += moveDistamce * Vector3.down;
+                iceCreamCom.FallingHight -= moveDistamce;
+                if (iceCreamCom.FallingHight <= 0)
+                {
+                    iceCreamCom.LifeTime = UnityEngine.Random.Range(staticData.IceCreamStaticData.LifeTime * 0.6f, staticData.IceCreamStaticData.LifeTime);
+                    iceCreamCom.SwitchingTime = staticData.IceCreamStaticData.SwitchingTime;
+                }
+            }
+            else
+            {
+                if (iceCreamCom.LifeTime > 0)
+                {
+                    iceCreamCom.LifeTime -= Time.deltaTime;
+                    iceCreamCom.IceCreamView.SpriteRenderer.color = new Color(1f, 1f, 1f, staticData.IceCreamStaticData.SwitchingCurve.Evaluate(iceCreamCom.LifeTime));
                 }
                 else
                 {
-                    if(eaterCom.EaterTransform.localPosition.y > 0.2f)
+                    if (iceCreamCom.SwitchingTime > 0)
                     {
+                        iceCreamCom.SwitchingTime -= Time.deltaTime;
 
-                        if (ChooseIceCream(out IceCreamView selectedIceView))
+                        if (iceCreamCom.SwitchingTime <= 0)
                         {
-                            world.SpawnIceCream(eaterCom.EaterTransform.position, selectedIceView, eaterCom.RotatingPart.localScale, eaterCom.EaterTransform.localPosition.y);
-                            selectedIceView.Animator.SetTrigger("Fall");
-                            eaterCom.IceCreamTime = UnityEngine.Random.Range(4f, 8f);
+                            iceCreamCom.IceCreamView.transform.gameObject.SetActive(false);
+                            iceCreamFilter.GetEntity(i).Destroy();
                         }
                     }
                 }
             }
-
-            foreach (var i in iceCreamFilter)
-            {
-                ref var iceCreamCom = ref iceCreamFilter.Get1(i);
-                if(iceCreamCom.FallingHight > -0.295f)
-                {
-                    float moveDistamce =  staticData.IceCreamStaticData.FallingSpeed * Time.deltaTime;
-                    iceCreamCom.IceCreamView.transform.position += moveDistamce * Vector3.down;
-                    iceCreamCom.FallingHight -= moveDistamce;
-                    if(iceCreamCom.FallingHight <= 0)
-                    {
-                        iceCreamCom.LifeTime = UnityEngine.Random.Range(staticData.IceCreamStaticData.LifeTime * 0.6f, staticData.IceCreamStaticData.LifeTime);
-                        iceCreamCom.SwitchingTime = staticData.IceCreamStaticData.SwitchingTime;
-                    }
-                }
-                else
-                {
-                    if(iceCreamCom.LifeTime > 0)
-                    {
-                        iceCreamCom.LifeTime -= Time.deltaTime;
-                        iceCreamCom.IceCreamView.SpriteRenderer.color = new Color(1f, 1f, 1f, staticData.IceCreamStaticData.SwitchingCurve.Evaluate(iceCreamCom.LifeTime));
-                    }
-                    else
-                    {
-                        if (iceCreamCom.SwitchingTime > 0)
-                        {
-                            iceCreamCom.SwitchingTime -= Time.deltaTime;
-
-                            if(iceCreamCom.SwitchingTime <= 0)
-                            {
-                                iceCreamCom.IceCreamView.transform.gameObject.SetActive(false);
-                                iceCreamFilter.GetEntity(i).Destroy();
-                            }
-                        }
-                    }
-                }
-            }
         }
+    }
 
-        private bool ChooseIceCream(out IceCreamView selectedIceCream)
+    private bool ChooseIceCream(out IceCreamView selectedIceCream)
+    {
+        selectedIceCream = null;
+
+        foreach (var @object in pool)
         {
-            selectedIceCream = null;
-
-            foreach (var @object in pool)
+            if (!@object.gameObject.activeSelf)
             {
-                if (!@object.gameObject.activeSelf)
-                {
-                    selectedIceCream = @object;
-                    selectedIceCream.gameObject.SetActive(true);
-                    return true;
-                }
+                selectedIceCream = @object;
+                selectedIceCream.gameObject.SetActive(true);
+                return true;
             }
-
-            return false;
         }
+
+        return false;
     }
 }

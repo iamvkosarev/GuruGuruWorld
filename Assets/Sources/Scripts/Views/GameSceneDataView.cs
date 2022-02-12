@@ -10,4 +10,5 @@ public class GameSceneDataView : MonoBehaviour
     public CanvasView CanvasView;
     public AudioSource AudioSource;
     public MapGenerator MapGenerator;
+    public PoolView PoolView;
 }

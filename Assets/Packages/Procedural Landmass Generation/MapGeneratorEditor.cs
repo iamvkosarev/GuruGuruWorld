@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEditor;
 
+#if DEBUG
 [CustomEditor (typeof (MapGenerator))]
 public class MapGeneratorEditor : Editor {
 
@@ -19,3 +20,4 @@ public class MapGeneratorEditor : Editor {
 		}
 	}
 }
+#endif
