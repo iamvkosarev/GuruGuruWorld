@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 5385783780991588326}
   - component: {fileID: 8549606635568390875}
   - component: {fileID: 5950417539220258493}
+  - component: {fileID: 1719629263186639482}
   m_Layer: 7
   m_Name: Slime
   m_TagString: Untagged
@@ -419,7 +420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value:
-    Transform: {fileID: 0}
+    Transform: {fileID: 1812642966493404496}
     OrganismStaticData: {fileID: 11400000, guid: d95de5c85dbbe494d9465d0f87f1bd04, type: 2}
 --- !u!114 &5385783780991588326
 MonoBehaviour:
@@ -470,9 +471,33 @@ MonoBehaviour:
       B: 2.9
       LocalPos: {x: 0.56, y: 0.09, z: 0}
     HightTransform: {fileID: 6495169180553365089}
-    PosTransform: {fileID: 1716631361685180524}
-    Damage: 5
     Destroyable: 0
+    GameObject: {fileID: 4611063078389584603}
+    DamagePause: 0
+  ellipseLines: 100
+--- !u!114 &1719629263186639482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611063078389584603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5222174ad7bc93b45817389e8dd86e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    DamageCheckerEllipses:
+    - A: 8.68
+      B: 2.31
+      LocalPos: {x: 0, y: 0.71, z: 0}
+    HightTransform: {fileID: 6495169180553365089}
+    ReactingOnDamageParts: []
+    StartHealth: 100
+    IsDead: 0
+    IsImmortal: 0
+    GetDamageOffcet: {x: 0, y: 0, z: 0}
     GameObject: {fileID: 4611063078389584603}
   ellipseLines: 100
 --- !u!1 &6530498059082111733

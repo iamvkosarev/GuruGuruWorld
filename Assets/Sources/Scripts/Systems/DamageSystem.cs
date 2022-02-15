@@ -18,6 +18,7 @@ sealed class DamageSystem : IEcsRunSystem
         {
             ref var damageAdderCom = ref filter.Get1(i);
 
+            if (!damageAdderCom.GameObject.activeSelf) { continue; }
             if(damageAdderCom.DamagePause > 0)
             {
                 damageAdderCom.DamagePause -= Time.deltaTime;
@@ -50,9 +51,17 @@ sealed class DamageSystem : IEcsRunSystem
                         if (radiusFromDamager + radiusFromOrganism >= dist_1 && healthCom.Health > 0 && !healthCom.IsImmortal)
                         {
                             damageAdderCom.DamagePause = damageAdderCom.DamagerStaticData.DemagePause;
-                            healthCom.Health -= damageAdderCom.Damage;
-                            world.SpawnTextMassageCom($"-{damageAdderCom.Damage}", Color.red, healthCom.HightTransform.position + healthCom.GetDamageOffcet + UnityEngine.Random.Range(-2.5f, 2.5f) * Vector3.right, Vector3.up * 7f, 0.5f);
-                            Debug.Log($"Add {damageAdderCom.Damage} damage to {healthCom.GameObject.name} from {damageAdderCom.GameObject}");
+                            healthCom.Health -= damageAdderCom.DamagerStaticData.Damage;
+                            if(damageAdderCom.DamagerStaticData.VFXWhenDamage != VFXType.Default)
+                            {
+                                world.SpawnVFXCom(damageAdderCom.DamagerStaticData.VFXWhenDamage, healthCom.HightTransform.position);
+                            }
+                            world.SpawnTextMassageCom($"-{damageAdderCom.DamagerStaticData.Damage}", Color.red, healthCom.HightTransform.position + healthCom.GetDamageOffcet + UnityEngine.Random.Range(-2.5f, 2.5f) * Vector3.right, Vector3.up * 7f, 0.5f);
+                            Debug.Log($"Add {damageAdderCom.DamagerStaticData.Damage} damage to {healthCom.GameObject.name} from {damageAdderCom.GameObject}");
+                            if (damageAdderCom.Destroyable)
+                            {
+                                damageAdderCom.GameObject.SetActive(false);
+                            }
                             break;
                         }
                     }

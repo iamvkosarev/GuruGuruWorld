@@ -12,6 +12,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 7b691f9feb2a4aa4894340e601b35e88, type: 2}
     - target: {fileID: 1349947148498825617, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
+      propertyPath: value.StartHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349947148498825617, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: value.GetDamageOffcet.y
       value: 15.07
       objectReference: {fileID: 0}
@@ -66,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 3278495203308895284, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 2419959666411369297, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+      objectReference: {fileID: -1431959949901343253, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     - target: {fileID: 4611063078389584603, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: m_Name
       value: Pelmen Player
@@ -74,18 +78,18 @@ PrefabInstance:
     - target: {fileID: 5001927834218385049, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -8944711432003351086, guid: 72fd22f6a6c2e9844a338de2d12e881a, type: 3}
+      objectReference: {fileID: 159664996109799672, guid: 72fd22f6a6c2e9844a338de2d12e881a, type: 3}
     - target: {fileID: 5873478050672959914, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6159608659137235220, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.25
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6159608659137235220, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.01
+      value: -8.3
       objectReference: {fileID: 0}
     - target: {fileID: 6320476933966762067, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: value.EaterTransform
@@ -105,7 +109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8649044856609131619, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: value.FaceType
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8871741530558100445, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: ChoosingColours.Array.size
@@ -113,7 +117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9193331035404596815, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: value.PelmenHatType
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 667640437357092555, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
@@ -163,6 +167,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9494d01a922dee7458c35aafdc631ce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3044531785657226209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4311270903569592077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341490e0ea7cb274da963c1827d17b3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    DropGun: 0
+    UseGun: 0
+    UsingGunView: {fileID: 0}
 --- !u!1001 &4908049599050114663
 PrefabInstance:
   m_ObjectHideFlags: 0

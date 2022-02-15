@@ -55,11 +55,11 @@ namespace Client {
                     
                     if (spawnTextCom.StartPos.x >= left && spawnTextCom.StartPos.x <= right 
                         && spawnTextCom.StartPos.y >= down &&  spawnTextCom.StartPos.y <= up)
-                    {
+                    {/*
                         Debug.Log($"\t\t{up}\n" +
                            $"{left}\t\t\t\t{right}\n" +
                            $"\t\t{down}\n" +
-                           $"need: {spawnTextCom.StartPos}");
+                           $"need: {spawnTextCom.StartPos}");*/
                         foreach (var j in textFilter)
                         {
                             ref var textCom = ref textFilter.Get1(j);

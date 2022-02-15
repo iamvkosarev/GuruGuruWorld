@@ -28,6 +28,9 @@ sealed class SpawnNPCSystem : IEcsInitSystem
                     SpawnNPC(staticData.CharactersStaticData.Butterfly, avaliableCoordinates);
                     SpawnNPC(staticData.CharactersStaticData.Rabbit, avaliableCoordinates);
                     SpawnNPC(staticData.CharactersStaticData.Frog, avaliableCoordinates);
+                }
+                for (int i = 0; i < 20; i++)
+                {
                     SpawnNPC(staticData.CharactersStaticData.Slime, avaliableCoordinates);
                 }
             }

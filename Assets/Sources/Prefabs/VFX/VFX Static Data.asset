@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56bf7fca868dd8e4fb743a74b9c98c09, type: 3}
+  m_Name: VFX Static Data
+  m_EditorClassIdentifier: 
+  VFX:
+  - {fileID: 8744226535097368189, guid: 58240d7bc011f0e4181c83823f46b598, type: 3}
+  - {fileID: 397858097851110598, guid: 777eb67dd7fc758408d2a5ebff97a71c, type: 3}

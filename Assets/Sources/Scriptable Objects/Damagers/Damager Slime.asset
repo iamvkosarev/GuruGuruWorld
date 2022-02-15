@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AvailableTargetsFromOrganisms:
   - {fileID: 11400000, guid: 7b691f9feb2a4aa4894340e601b35e88, type: 2}
-  - {fileID: 11400000, guid: 51676afdd9469364cac1f5aa75063ba7, type: 2}
   DemagePause: 1
+  Damage: 40

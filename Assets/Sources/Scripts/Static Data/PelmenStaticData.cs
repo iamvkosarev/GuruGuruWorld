@@ -18,7 +18,8 @@ public enum PelmenFaceType
     Disappointed,
     Condemning_2,
     Dio,
-    Moustache
+    Moustache,
+    Tanjiro
 }
 public enum PelmenHatType
 {
@@ -31,7 +32,8 @@ public enum PelmenHatType
     Random,
     VanGogh,
     Dio,
-    Brown_Hair_1
+    Brown_Hair_1,
+    Witcher
 }
 [Serializable]
 public class PelmenFaceData

@@ -5,4 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "MyProject/Game/VFXStaticData")]
 public class VFXStaticData : ScriptableObject
 {
+    public GameObject[] VFX;
 }

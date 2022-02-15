@@ -8,6 +8,7 @@ sealed class PlayerInputSystem : IEcsRunSystem
     readonly EcsWorld world = null;
     readonly EcsFilter<PlayerComponent, MovingComponent> playerFilter;
     readonly EcsFilter<PlayerComponent, TransportUserComponent> playerUserTransportFilter;
+    readonly EcsFilter<PlayerComponent, GunUserComponent> playerGunUserFilter;
 
     private bool SwitchOffText;
 
@@ -32,6 +33,19 @@ sealed class PlayerInputSystem : IEcsRunSystem
             {
                 ref var userCom = ref playerUserTransportFilter.Get2(i);
                 userCom.LeaveTranspor = true;
+            }
+        }
+        foreach (var i in playerGunUserFilter)
+        {
+            if (Input.GetKey(KeyCode.X))
+            {
+                ref var userCom = ref playerGunUserFilter.Get2(i);
+                userCom.UseGun = true;
+            }
+            if (Input.GetKey(KeyCode.E))
+            {
+                ref var userCom = ref playerGunUserFilter.Get2(i);
+                userCom.DropGun = true;
             }
         }
     }

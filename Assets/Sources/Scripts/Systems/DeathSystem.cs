@@ -15,7 +15,10 @@ namespace Client {
                 {
                     healthCom.IsDead = true;
                     healthCom.GameObject.SetActive(false);
-                    world.SpawnTextMassageCom($"{organismCom.OrganismStaticData.Name} is Dead", Color.red, healthCom.HightTransform.position + healthCom.GetDamageOffcet, Vector3.up * 3f, 2f);
+                    if(organismCom.OrganismStaticData.Name == "Pelmen")
+                    {
+                        world.SpawnVFXCom(VFXType.DeathPelmen, healthCom.HightTransform.position);
+                    }
                 }
             }
         }

@@ -44,6 +44,9 @@ TextureImporter:
   - first:
       213: 2419959666411369297
     second: pelmen_faces7_13
+  - first:
+      213: -1431959949901343253
+    second: pelmen_faces7_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -446,6 +449,27 @@ TextureImporter:
       bones: []
       spriteID: 153f83fbe7c659120800000000000000
       internalID: 2419959666411369297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pelmen_faces7_14
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2
+        width: 42
+        height: 30
+      alignment: 9
+      pivot: {x: 0.4436, y: -0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be55b8d2308a02ce0800000000000000
+      internalID: -1431959949901343253
       vertices: []
       indices: 
       edges: []

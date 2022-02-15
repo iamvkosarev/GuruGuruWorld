@@ -12,7 +12,7 @@ public class PoolView : MonoBehaviour
         {
             PoolParent = new GameObject("Pool").transform;
         }
-        Transform ObjectsParent = new GameObject("name").transform;
+        Transform ObjectsParent = new GameObject(name).transform;
         ObjectsParent.parent = PoolParent;
         List<GameObject> newPool = new List<GameObject>();
 

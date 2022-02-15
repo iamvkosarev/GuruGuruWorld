@@ -52,6 +52,9 @@ MonoBehaviour:
   - Sprite: {fileID: 2419959666411369297, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 13
     FaceLocalPos: {x: 0.2, y: -1.2, z: 0}
+  - Sprite: {fileID: -1431959949901343253, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    PelmenFaceType: 14
+    FaceLocalPos: {x: 0.2, y: -1.2, z: 0}
   PelmenAss:
     Sprite: {fileID: 3797566039774432171, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 3
@@ -84,6 +87,9 @@ MonoBehaviour:
   - Sprite: {fileID: -8944711432003351086, guid: 72fd22f6a6c2e9844a338de2d12e881a, type: 3}
     PelmenHatType: 9
     HatLocalPos: {x: -0.25, y: 13.01, z: 0}
+  - Sprite: {fileID: 159664996109799672, guid: 72fd22f6a6c2e9844a338de2d12e881a, type: 3}
+    PelmenHatType: 10
+    HatLocalPos: {x: -0.7, y: -8.3, z: 0}
   PelmenSmallFaces:
   - Sprite: {fileID: -5637526244296337658, guid: ed2da85acde75a148afb10e07cc085db, type: 3}
     PelmenFaceType: 0

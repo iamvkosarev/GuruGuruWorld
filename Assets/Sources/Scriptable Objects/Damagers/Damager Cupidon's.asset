@@ -9,6 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56bf7fca868dd8e4fb743a74b9c98c09, type: 3}
-  m_Name: VFX Static Data
+  m_Script: {fileID: 11500000, guid: e20c3a8d790c21e4f8dba240800e3467, type: 3}
+  m_Name: Damager Cupidon's
   m_EditorClassIdentifier: 
+  AvailableTargetsFromOrganisms:
+  - {fileID: 11400000, guid: d95de5c85dbbe494d9465d0f87f1bd04, type: 2}
+  VFXWhenDamage: 2
+  DemagePause: 1
+  Damage: 40
