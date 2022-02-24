@@ -54,7 +54,7 @@ sealed class DamageSystem : IEcsRunSystem
                             healthCom.Health -= damageAdderCom.DamagerStaticData.Damage;
                             if(damageAdderCom.DamagerStaticData.VFXWhenDamage != VFXType.Default)
                             {
-                                world.SpawnVFXCom(damageAdderCom.DamagerStaticData.VFXWhenDamage, healthCom.HightTransform.position);
+                                world.SpawnVFXCom(damageAdderCom.DamagerStaticData.VFXWhenDamage, healthCom.HightTransform.position, true, Color.yellow);
                             }
                             world.SpawnTextMassageCom($"-{damageAdderCom.DamagerStaticData.Damage}", Color.red, healthCom.HightTransform.position + healthCom.GetDamageOffcet + UnityEngine.Random.Range(-2.5f, 2.5f) * Vector3.right, Vector3.up * 7f, 0.5f);
                             Debug.Log($"Add {damageAdderCom.DamagerStaticData.Damage} damage to {healthCom.GameObject.name} from {damageAdderCom.GameObject}");

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AvailableTargetsFromOrganisms:
   - {fileID: 11400000, guid: d95de5c85dbbe494d9465d0f87f1bd04, type: 2}
-  VFXWhenDamage: 2
+  VFXWhenDamage: 3
   DemagePause: 1
   Damage: 40

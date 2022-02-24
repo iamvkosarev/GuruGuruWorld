@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Moving Cupid's Arow
   m_EditorClassIdentifier: 
   IsJumping: 0
-  Speed: 120
+  Speed: 150
   TargetPosLength: {x: 50, y: 150}
   JumpHight: 8.7
   JumpTime: 1

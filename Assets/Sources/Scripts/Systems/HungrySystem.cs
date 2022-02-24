@@ -32,24 +32,41 @@ sealed class HungrySystem : IEcsRunSystem
             }
             #endregion
 
-            var colliders = Physics2D.OverlapAreaAll(com.MouthPoint.position, com.MouthSize);
-            foreach (var collider in colliders)
+            if(com.CanEatSpandedTime <= 0)
             {
-                if (collider.gameObject.TryGetComponent<FoodView>(out var food))
+                var colliders = Physics2D.OverlapAreaAll(com.MouthPoint.position, com.MouthSize);
+                foreach (var collider in colliders)
                 {
-                    if (Vector3.Distance(com.MouthPoint.position, food.transform.position) < com.MouthSize.x / 2f)
+                    if (collider.gameObject.TryGetComponent<FoodView>(out var food))
                     {
-                        com.ShowingSliderTimer = com.ShowingSliderTimerMax;
-                        com.EatenPoints = Mathf.Min(com.EatenPoints + food.AddingPoints, com.MaxEatenPoints);
-                        com.Slider.value = com.EatenPoints;
-                        com.EatingVFX.startColor = food.Color;
-                        com.EatingVFX.Play();
-                        world.SpawnSoundCom(ClipType.PickUpFood);
-                        collider.enabled = false;
-                        food.gameObject.SetActive(false);
+                        if (Vector3.Distance(com.MouthPoint.position, food.transform.position) < com.MouthSize.x / 2f)
+                        {
+                            com.ShowingSliderTimer = com.ShowingSliderTimerMax;
+                            com.EatenPoints = Mathf.Min(com.EatenPoints + food.AddingPoints, com.MaxEatenPoints);
+                            com.Slider.value = com.EatenPoints;
+                            com.EatingVFX.startColor = food.Color;
+                            com.EatingVFX.Play();
+                            world.SpawnSoundCom(ClipType.PickUpFood);
+                            food.CurrentStep++;
+                            if (food.CurrentStep <= food.AdditionalStaps.Length)
+                            {
+                                food.SpriteRenderer.sprite = food.AdditionalStaps[food.CurrentStep - 1];
+                            }
+                            else
+                            {
+                                collider.enabled = false;
+                                food.gameObject.SetActive(false);
+                            }
+                            com.CanEatSpandedTime = food.PauseTime;
+                        }
                     }
                 }
             }
+            else
+            {
+                com.CanEatSpandedTime -= Time.deltaTime;
+            }
+            
 
         }
     }

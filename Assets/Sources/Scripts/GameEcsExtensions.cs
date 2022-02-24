@@ -42,7 +42,7 @@ public static class GameEcsExtensions
         com.MoveLocalPos= moveLocalPos;
         com.MoveTime= moveTime;
     }
-    public static void SpawnVFXCom(this EcsWorld world, VFXType type, Vector3 pos)
+    public static void SpawnVFXCom(this EcsWorld world, VFXType type, Vector3 pos, bool SetColor = false, Color color = default)
     {
         var entity = world.NewEntity();
         ref var com = ref entity.Get<SpawnVFXComponent>();

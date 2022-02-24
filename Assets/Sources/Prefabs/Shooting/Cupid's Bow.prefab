@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value:
-    Offset: -8
+    Offset: -10
     RunOnlyOnce: 0
     Renderer: {fileID: 3128066590827359538}
     Transform: {fileID: 3128066590827359539}
@@ -210,20 +210,25 @@ MonoBehaviour:
   value:
     GunView: {fileID: 8511709186211523175}
     currentTensionStages: 0
-    tensionStagesCount: 4
+    tensionStagesCount: 3
+    bulletCount: 1
     timeForTensionStages: 0.5
     spandedTime: 0
     SpriteRenderer: {fileID: 3128066590827359538}
     ShootingStaticData: {fileID: 11400000, guid: 53f02837d35df154abcb7e5984de0a20, type: 2}
     TensionStages:
     - Sprite: {fileID: 8952162787185664858, guid: 0e3922eaf8513ef4489959933dfa9a16, type: 3}
-      PointForArrow: {fileID: 8690791241814611629}
-    - Sprite: {fileID: 8952162787185664858, guid: 0e3922eaf8513ef4489959933dfa9a16, type: 3}
-      PointForArrow: {fileID: 8690791241814611629}
+      PointsForArrowParents:
+      - {fileID: 8293741112829022456}
     - Sprite: {fileID: -434252183827366392, guid: 0e3922eaf8513ef4489959933dfa9a16, type: 3}
-      PointForArrow: {fileID: 7633141715170849948}
+      PointsForArrowParents:
+      - {fileID: 8293741112829022456}
     - Sprite: {fileID: 1131549020000966294, guid: 0e3922eaf8513ef4489959933dfa9a16, type: 3}
-      PointForArrow: {fileID: 1434255097383466013}
+      PointsForArrowParents:
+      - {fileID: 8293741112829022456}
+    - Sprite: {fileID: 1131549020000966294, guid: 0e3922eaf8513ef4489959933dfa9a16, type: 3}
+      PointsForArrowParents:
+      - {fileID: 8293741112829022456}
 --- !u!1 &3908037752363859966
 GameObject:
   m_ObjectHideFlags: 0

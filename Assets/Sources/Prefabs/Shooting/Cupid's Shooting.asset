@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 343250704975253767, guid: fc164cd1975e7f346ba327a10159b55b, type: 3}
   Damage: 0
-  bulletPoolSize: 3
+  bulletPoolSize: 90
   BulletFlyCurve:
     serializedVersion: 2
     m_Curve:

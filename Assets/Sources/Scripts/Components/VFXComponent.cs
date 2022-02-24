@@ -6,7 +6,8 @@ public enum VFXType
 {
     Default,
     DeathPelmen,
-    LoveVFX
+    LoveVFX,
+    HitVFX
 }
 namespace Client {
     [Serializable]
@@ -16,5 +17,6 @@ namespace Client {
         public GameObject GameObject;
         public Transform Transform;
         public VFXType VFXType;
+        public SpriteRenderer SpriteRenderer;
     }
 }

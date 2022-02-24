@@ -490,8 +490,11 @@ MonoBehaviour:
   value:
     DamageCheckerEllipses:
     - A: 8.68
-      B: 2.31
-      LocalPos: {x: 0, y: 0.71, z: 0}
+      B: 1.53
+      LocalPos: {x: 0, y: 1.6, z: 0}
+    - A: 7.96
+      B: 6.81
+      LocalPos: {x: 0, y: 10.38, z: 0}
     HightTransform: {fileID: 6495169180553365089}
     ReactingOnDamageParts: []
     StartHealth: 100

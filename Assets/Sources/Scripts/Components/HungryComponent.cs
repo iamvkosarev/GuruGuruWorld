@@ -12,6 +12,5 @@ public struct HungryComponent
     public Vector3 MouthSize;
     public int EatenPoints;
     public int MaxEatenPoints;
-    public float ShowingSliderTimer;
-    public float ShowingSliderTimerMax;
+    public float ShowingSliderTimer, ShowingSliderTimerMax, CanEatSpandedTime;
 }

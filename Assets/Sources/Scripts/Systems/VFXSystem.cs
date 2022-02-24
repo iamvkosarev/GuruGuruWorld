@@ -64,6 +64,10 @@ namespace Client {
                                 vfxCom.PlaySpandedTime = 0f;
                                 vfxCom.Transform.position = spawnVFXCom.Position;
                                 vfxCom.GameObject.SetActive(true);
+                                if (spawnVFXCom.SetColor)
+                                {
+                                    vfxCom.SpriteRenderer.color = spawnVFXCom.Color;
+                                }
                                 spawnVFXFilter.GetEntity(i).Destroy();
                                 break;
                             }

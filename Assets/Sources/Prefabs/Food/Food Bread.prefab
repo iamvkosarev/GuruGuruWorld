@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6442709339354836670}
   - component: {fileID: 6442709339354836671}
   m_Layer: 0
-  m_Name: Food Chees
+  m_Name: Food Bread
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 1194637111
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6315350155055842310, guid: 1e783aa357445b442b42856cd9c3a677, type: 3}
+  m_Sprite: {fileID: -640944347980742849, guid: 484bce3cd55dff84ca5b49e1608be0a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6, y: 2}
+  m_Size: {x: 6.5, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -131,18 +131,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 2}
+  m_Offset: {x: 0, y: 1.0093887}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 6.5, y: 3}
-    newSize: {x: 6, y: 2}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 9.5, y: 16.5}
+    newSize: {x: 6.5, y: 3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.737521, y: 4}
+  m_Size: {x: 6, y: 2.0187774}
   m_EdgeRadius: 0
 --- !u!114 &6442709339354836671
 MonoBehaviour:
@@ -159,6 +159,8 @@ MonoBehaviour:
   AddingPoints: 3
   Color: {r: 0.48627454, g: 0.13333334, b: 0.13333334, a: 1}
   SpriteRenderer: {fileID: 6442709339354836667}
-  AdditionalStaps: []
+  AdditionalStaps:
+  - {fileID: 703310185315577024, guid: 484bce3cd55dff84ca5b49e1608be0a1, type: 3}
+  - {fileID: 6376916931432241167, guid: 484bce3cd55dff84ca5b49e1608be0a1, type: 3}
   CurrentStep: 0
   PauseTime: 0.5
