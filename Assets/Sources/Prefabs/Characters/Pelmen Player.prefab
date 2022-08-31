@@ -67,10 +67,14 @@ PrefabInstance:
       propertyPath: value.MovingStaticData
       value: 
       objectReference: {fileID: 11400000, guid: 22c846efc44538645bdb7cd331809c6e, type: 2}
+    - target: {fileID: 2902019726255521608, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3278495203308895284, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1431959949901343253, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+      objectReference: {fileID: -260824204816210481, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     - target: {fileID: 4611063078389584603, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: m_Name
       value: Pelmen Player
@@ -101,15 +105,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7351012096219109411, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7356226565676359896, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7356226565676359896, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8649044856609131619, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: value.FaceType
-      value: 14
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8871741530558100445, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: ChoosingColours.Array.size
@@ -117,7 +125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9193331035404596815, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}
       propertyPath: value.PelmenHatType
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 667640437357092555, guid: 55a430f5ddb80a54da0c13a9b84c7aa4, type: 3}

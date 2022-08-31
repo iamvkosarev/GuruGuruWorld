@@ -10,6 +10,7 @@ sealed class PelmenFaceSystem : IEcsRunSystem, IEcsInitSystem
     readonly GameStaticData staticData = null;
     readonly EcsFilter<PelmenComponent, MovingComponent> pelmenFilter = null;
     readonly EcsFilter<PelmenComponent, TargetedFaceComponent> targetedFaceFilter = null;
+    readonly EcsFilter<SetFaceComponent> setFaceFilter = null;
 
     private Dictionary<PelmenFaceType, PelmenFaceData> pelmenFaceDictionary = new Dictionary<PelmenFaceType, PelmenFaceData>();
     private Dictionary<PelmenFaceType, PelmenFaceData> pelmenSmallFaceDictionary = new Dictionary<PelmenFaceType, PelmenFaceData>();
@@ -83,6 +84,31 @@ sealed class PelmenFaceSystem : IEcsRunSystem, IEcsInitSystem
 
     void IEcsRunSystem.Run()
     {
+        foreach (var setFaceI in setFaceFilter)
+        {
+            ref var setFaceCom = ref setFaceFilter.Get1(setFaceI);
+            foreach (var i in pelmenFilter)
+            {
+                ref var pelmenCom = ref pelmenFilter.Get1(i);
+                ref var moverCom = ref pelmenFilter.Get2(i);
+                if(setFaceCom.PelmenTransform == moverCom.Transform)
+                {
+                    if (setFaceCom.RandomType)
+                    {
+                        pelmenCom.BaseFaceType = GetRandomFace();
+                    }
+                    else
+                    {
+
+                        pelmenCom.BaseFaceType = setFaceCom.PelmenFaceType;
+                    }
+                    pelmenCom.Face.sprite = pelmenFaceDictionary[pelmenCom.FaceType].Sprite;
+                    setFaceFilter.GetEntity(setFaceI).Destroy();
+                    break;
+                }
+
+            }
+        }
         foreach (var i in pelmenFilter)
         {
             ref var pelmenCom = ref pelmenFilter.Get1(i);

@@ -71,6 +71,7 @@ namespace Client {
                 .Add(new SpawnEnvironmentSystem())
                 .Add(new SpawnPlayerSystem())
                 .Add(new SpawnNPCSystem())
+                .Add(new ChangePlayerFacesSystem())
                 .ConvertScene()
                 .Add(new IceCreamSystem())
                 .Add(new ShowHelpImageSystem())
@@ -161,7 +162,7 @@ namespace Client {
                     var systemUpdateData = systemData.SystemDatas[i];
                     if (systemUpdateData.WasWorking != systemUpdateData.IsWorking)
                     {
-                        Debug.Log($"Change {systemData.EcsSystems.GetRunSystems().Items[systemUpdateData.Index].System.GetType().ToString()} to {systemUpdateData.IsWorking}");
+                        //Debug.Log($"Change {systemData.EcsSystems.GetRunSystems().Items[systemUpdateData.Index].System.GetType().ToString()} to {systemUpdateData.IsWorking}");
                         systemData.EcsSystems.SetRunSystemState(systemUpdateData.Index, systemUpdateData.IsWorking);
                     }
                     systemUpdateData.WasWorking = systemUpdateData.IsWorking;

@@ -18,8 +18,16 @@ public enum PelmenFaceType
     Disappointed,
     Condemning_2,
     Dio,
-    Moustache,
-    Tanjiro
+    Moustache_1,
+    Tanjiro,
+    Seva,
+    Moustache_2,
+    x_x,
+    SickWithTongue,
+    EvilMonster,
+    Scared_1,
+    Scared_2,
+    Crying
 }
 public enum PelmenHatType
 {
@@ -61,4 +69,6 @@ public class PelmenStaticData : ScriptableObject
     public PelmenFaceData PelmenSmallAss;
     public PelmenHatData[] PelmenSmallHats;
     public Color[] colors;
+    public SetFaceProvider SetFaceProvider;
+    public PelmenFaceType[] PlayerFaces;
 }

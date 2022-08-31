@@ -13,48 +13,72 @@ MonoBehaviour:
   m_Name: Pelmen Static Data
   m_EditorClassIdentifier: 
   PelmenFaces:
-  - Sprite: {fileID: -2947167315047256872, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+  - Sprite: {fileID: 7410551036071264579, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     PelmenFaceType: 0
-    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
-  - Sprite: {fileID: -4122173218477165418, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: -5364906941691275753, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     PelmenFaceType: 4
-    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
-  - Sprite: {fileID: -5831263107636501562, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: 5955879461628250882, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     PelmenFaceType: 5
-    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
-  - Sprite: {fileID: -5531519331545463891, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: 5526521836041179369, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     PelmenFaceType: 11
-    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
-  - Sprite: {fileID: 6447667869744367629, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: 2384720678893437250, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     PelmenFaceType: 1
-    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
-  - Sprite: {fileID: 8372581647009413146, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: -7176648495160461235, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     PelmenFaceType: 9
-    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
-  - Sprite: {fileID: 1130075476240362073, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: -7266778447719571743, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     PelmenFaceType: 7
-    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
-  - Sprite: {fileID: -4255000521028527118, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: 1269179014589820952, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     PelmenFaceType: 8
-    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
-  - Sprite: {fileID: 8547388303434181623, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: 7087190180345733954, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     PelmenFaceType: 2
-    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
-  - Sprite: {fileID: 8963238444289827078, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: -290703160494710393, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     PelmenFaceType: 6
-    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
-  - Sprite: {fileID: -5554099390889633535, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: 973193391547674443, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     PelmenFaceType: 10
-    FaceLocalPos: {x: -0.14, y: -1.2, z: 0}
-  - Sprite: {fileID: 5900476764712876633, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: 3615076672821717512, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     PelmenFaceType: 12
-    FaceLocalPos: {x: -0.67, y: -0.47, z: 0}
-  - Sprite: {fileID: 2419959666411369297, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: 4077749287324258970, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     PelmenFaceType: 13
-    FaceLocalPos: {x: 0.2, y: -1.2, z: 0}
-  - Sprite: {fileID: -1431959949901343253, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: 6512630702317039235, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
     PelmenFaceType: 14
-    FaceLocalPos: {x: 0.2, y: -1.2, z: 0}
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: 1723843527247486101, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
+    PelmenFaceType: 15
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: -260824204816210481, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
+    PelmenFaceType: 16
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: -407773900984651337, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
+    PelmenFaceType: 17
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: -5966103445896199782, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
+    PelmenFaceType: 18
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: -8715698441499582140, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
+    PelmenFaceType: 19
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: 854683959830123645, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
+    PelmenFaceType: 20
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: -2643206374516912867, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
+    PelmenFaceType: 21
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
+  - Sprite: {fileID: 2973286752552807837, guid: 6b343a9a5198582449bb6b20f562b5fb, type: 3}
+    PelmenFaceType: 22
+    FaceLocalPos: {x: -0.71, y: 6.89, z: 0}
   PelmenAss:
     Sprite: {fileID: 3797566039774432171, guid: 83935e082f0173c479ec87cffd1d0023, type: 3}
     PelmenFaceType: 3
@@ -106,3 +130,5 @@ MonoBehaviour:
   - {r: 1, g: 0.92156863, b: 0.91764706, a: 1}
   - {r: 0.9607843, g: 0.8352941, b: 0.6862745, a: 1}
   - {r: 1, g: 1, b: 0.7882353, a: 1}
+  SetFaceProvider: {fileID: 231989392331063034, guid: 55fec28563970e544bfd7e1312c210d5, type: 3}
+  PlayerFaces: 100000001100000012000000150000001600000007000000
